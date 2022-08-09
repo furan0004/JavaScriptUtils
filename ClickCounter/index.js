@@ -41,4 +41,4 @@ counter.onclick = function(){
     display.innerText = count;
 };
 
-fixTopBar();
+fixTopBar(title);
