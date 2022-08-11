@@ -3,21 +3,22 @@
         <div class="topbar" id="top"></div>
 
         <div class="line">
-            <div class="button" onclick="location.href='ClickCounter'">
-                <p class="button-label">
-                    Click Counter
-                </p>
+            <div id="field"></div>
+            <div id="controll">
+                <button id="resetButton">Reset</button>
+                <p id="turnCount"></p>
             </div>
-            <div class="button" onclick="location.href='SI-Prefix-Concentration'">
-                <p class="button-label">
-                    SI-Prefix Concentration
-                </p>
-            </div>
+
+            <span>
+                ペアとなった接頭辞の値の積が1であればカードが消え、場のカードが全て消えればクリア。
+            </span>
+
+            <table id="prefixTable"></table>
         </div>
     </body>
 
     <head>
-        <title> 黒咲くろんの手作り </title>
+        <title> SI-Prefix Concentration </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
@@ -26,8 +27,8 @@
 
         <script src="https://pages.kurosaki.love/scripts/top.js"></script>
         <link rel="stylesheet" href="https://pages.kurosaki.love/styles/top.css">
-        
-        <script src="scripts/univ.js"></script>
+
+        <script src="../scripts/univ.js"></script>
         <script src="index.js"></script>
         <link rel="stylesheet" href="index.css">
 
@@ -40,6 +41,5 @@
 
         gtag('config', 'G-RB6PRF5KRD');
         </script>
-
     </head>
 </html>

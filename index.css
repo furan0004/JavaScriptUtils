@@ -1,0 +1,26 @@
+.button{
+    width: fit-content;
+    height: 32px;
+    display: flex;
+    padding: 2px 4px;
+
+    border-radius: 8px;
+    border: #000000 solid 1px;
+    background: #FFFFFF;
+}
+
+.button:hover{
+    border-width: 2px;
+}
+
+.button *{
+    user-select: none;
+}
+
+.button-label{
+    width: auto;
+    height: auto;
+    margin: auto;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
