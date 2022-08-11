@@ -242,7 +242,7 @@ for(let i = -1; i < prefixes.length; i++){
     for(let j = 0; j < 3; j++){
         let cell = document.createElement(i == -1 ? "th" : "td");
         cell.classList.add("table-cell");
-        cell.innerText = i == -1 ? tableHeader[j] : prefixes[i][tableHeader[j].toLowerCase()];
+        cell.innerText = i == -1 ? tableHeader[j] : prefixes[prefixes.length - 1 - i][tableHeader[j].toLowerCase()];
         row.appendChild(cell);
     }
 
