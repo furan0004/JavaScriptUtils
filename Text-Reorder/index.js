@@ -1,5 +1,3 @@
-fixTopBar("Text Reorder");
-
 const TOC = [
     "Invert",
     "Reorder",

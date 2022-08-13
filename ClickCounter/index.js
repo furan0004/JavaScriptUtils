@@ -1,4 +1,3 @@
-const title = "Click Counter";
 const duration = 10000;
 
 var counter = document.getElementById("counter");
@@ -40,5 +39,3 @@ counter.onclick = function(){
     count++;
     display.innerText = count;
 };
-
-fixTopBar(title);

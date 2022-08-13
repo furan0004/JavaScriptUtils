@@ -232,8 +232,6 @@ function reset(){
     setup(newSymbolList());
 }
 
-
-fixTopBar("SI-Prefix Concentration");
 reset();
 
 for(let i = -1; i < prefixes.length; i++){
