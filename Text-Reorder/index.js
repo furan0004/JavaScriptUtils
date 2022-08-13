@@ -38,7 +38,7 @@ var resultFields = [];
                 let options = [];
                 for(let j = 2; j < fieldsByName.length; j++) options.push(fieldsByName[j].value);
             
-                switch(TOC.indexOf(name.charAt(0).toUppercase() + name.substring(1, name.length))){
+                switch(TOC.indexOf(name.charAt(0).toUpperCase() + name.substring(1, name.length))){
                     case 0:
                         fieldsByName[1].value = invert(fieldsByName[0].value);
                         break;
