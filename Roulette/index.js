@@ -20,7 +20,7 @@ var field = document.getElementsByClassName("roulette-field")[0];
         let angle = Math.PI * parts[i] / a;
         let vertical = radius;
         let horizontal = vertical * Math.tan(angle / 2);
-        let rgb = colourConverter.HSVtoRGB(360 * Math.random(), 1, 1);
+        let rgb = colourConverter.HSVtoRGB(2 * (currentAngle + angle * Math.random()), 1, 1);
         let colour = `rgb(${256 * rgb.r}, ${256 * rgb.g}, ${256 * rgb.b})`;
 
         console.log(rgb);
