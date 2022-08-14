@@ -26,7 +26,7 @@ var colours = [];
                 break;
         }
 
-        field.style.animation = `spin ${100*(1 - index)}ms infinite forwards`;
+        field.style.animationPlayState = ["paused", "running"][1 - index];
         event.target.innerText = labelText[1 - index]; 
     });
 
