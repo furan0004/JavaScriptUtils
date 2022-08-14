@@ -28,8 +28,8 @@ var time;
                 break;
 
             case 1:
-                let deg = time / 25 * 36;
-                console.log(deg, time);
+                let deg = (time / 25 * 36 - list.children[0].children[1].value) % 360;
+                console.log(deg, time, deg / 180);
 
                 clearInterval(interval);
                 time = 0;
