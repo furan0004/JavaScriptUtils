@@ -68,6 +68,7 @@ var colours = [];
         }
 
         loadRoulette(parts);
+        console.log(parts);
     });
 
     for(let i = 0; i < 3; i++) addBtn.click();
