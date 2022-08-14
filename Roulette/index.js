@@ -32,7 +32,7 @@ var time;
                 for(let i = 0; i < list.children.length - 1; i++) a += list.children[i].children[1].value;
                 let deg = (time * 360 - 180 * list.children[0].children[1].value / (2 * a)) % 180;
                 let pos = 0;
-                console.log(deg, time, deg);
+                console.log(deg, time, a * deg / 180);
                 for(let i = 0; i < list.children.length - 1; i++){
                     if(pos > a * deg / 180){
                         let rgb = field.children[i - 1].style.borderTop.match(/(rgb)\(.*\)/)[0].replace(/(rgb|[\(\)])/g, "").split(",");
