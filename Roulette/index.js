@@ -9,7 +9,7 @@ var list = document.getElementById("list");
 
 var field = document.getElementsByClassName("roulette-field")[0];
 
-var colours = [];
+var time;
 
 (function(){
     spinBtn.addEventListener("click", function(event){
@@ -17,13 +17,21 @@ var colours = [];
         let label = event.target.innerText;
         let index = labelText.indexOf(label);
 
+        let interval;
+
         switch(index){
             case 0:
-                
+                time = 0;
+                interval = setInterval(function(){
+                    time++;
+                }, 1);
                 break;
 
             case 1:
-                console.log(event.target);
+                console.log(time);
+
+                clearInterval(interval);
+                time = 0;
                 break;
         }
 
