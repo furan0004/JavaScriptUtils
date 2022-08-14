@@ -43,7 +43,7 @@ export class colourConverter{
     static HSVtoRGB(hue, saturation, value, type = 0){
         //type is 0 or 1
     
-        if(hue == void 0) hue = ((hue % 360) + 360) % 360;
+        if(hue != void 0) hue = ((hue % 360) + 360) % 360;
         
         let C = value ** type * saturation;
         let _hue = hue / 60;
