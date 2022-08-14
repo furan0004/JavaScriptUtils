@@ -71,7 +71,7 @@ var colours = [];
     });
 
     for(let i = 0; i < 3; i++) addBtn.click();
-    syncLabel();
+    syncBtn.click();
 })();
 
 function loadRoulette(parts){
@@ -89,7 +89,7 @@ function loadRoulette(parts){
         let part = document.createElement("div");
         part.classList.add("roulette-part");
 
-        let angle = Math.PI * parts[i] / a;
+        let angle = Math.PI * parts[i].length / a;
         let vertical = radius;
         let horizontal = vertical * Math.tan(angle / 2);
         let rgb = colourConverter.HSVtoRGB((360 / Math.PI) * (currentAngle + angle * Math.random()), 1, 1);
