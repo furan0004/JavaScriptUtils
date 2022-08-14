@@ -46,7 +46,7 @@ var colours = [];
         row.appendChild(label);
         row.appendChild(lengthInput);
         row.appendChild(nameInput);
-        row.appendChild(createBtn);
+        //row.appendChild(createBtn);
         row.appendChild(removeBtn);
 
         list.insertBefore(row, event.target);
