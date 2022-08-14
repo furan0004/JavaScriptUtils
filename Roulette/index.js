@@ -23,7 +23,7 @@ var colours = [];
                 break;
 
             case 1:
-                console.log(field.style.transform);
+                console.log(event.target.css);
                 break;
         }
 
