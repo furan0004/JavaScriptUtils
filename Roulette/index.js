@@ -71,6 +71,7 @@ var colours = [];
     });
 
     for(let i = 0; i < 3; i++) addBtn.click();
+    syncLabel();
 })();
 
 function loadRoulette(parts){
