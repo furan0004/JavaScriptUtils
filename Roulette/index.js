@@ -24,13 +24,13 @@ var time;
                 time = 0;
                 interval = setInterval(function(){
                     time++;
-                }, 1);
+                }, 250);
                 break;
 
             case 1:
                 let a = 0;
                 for(let i = 0; i < list.children.length - 1; i++) a += list.children[i].children[1].value;
-                let deg = (time / 25 * 36 - 180 * list.children[0].children[1].value / (2 * a)) % 180;
+                let deg = time * 360 - 180 * list.children[0].children[1].value / (2 * a);
                 let pos = 0;
                 console.log(deg, time, deg / 180);
                 for(let i = 0; i < list.children.length - 1; i++){
