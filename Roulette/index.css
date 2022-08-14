@@ -17,7 +17,7 @@
     
     overflow: hidden;
     background: #FFFFFF;
-    animation: spin 100ms infinite forwards;
+    animation: spin 250ms infinite forwards;
     animation-timing-function: linear;
     animation-play-state: paused;
 }
