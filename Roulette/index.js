@@ -26,7 +26,7 @@ var colours = [];
                 break;
         }
 
-        field.style.animation = `spin ${100*(1 - index)}ms infinite`;
+        field.style.animation = `spin ${100*(1 - index)}ms infinite forwards`;
         event.target.innerText = labelText[1 - index]; 
     });
 
