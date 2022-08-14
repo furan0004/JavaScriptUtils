@@ -34,7 +34,7 @@ var time;
                 for(let i = 0; i < list.children.length; i++){
                     if(pos > deg / 180){
                         let rgb = field.children[i - 1].style.borderTop.match(/(rgb)\(.*\)/)[0].replace(/(rgb|[\(\)])/g, "").split(",");
-                        console.log(list.children[i - 1].children[0].innerText, rgb);
+                        console.log(list.children[i - 1].children[0].innerText, rgb, colourConverter.RGBtoColourCode.apply(rgb));
                         break;
                     }
 
