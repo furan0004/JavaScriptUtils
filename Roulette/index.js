@@ -33,7 +33,8 @@ var time;
                 console.log(deg, time, deg / 180);
                 for(let i = 0; i < list.children.length; i++){
                     if(pos > deg / 180){
-                        console.log(list.children[i - 1].children[0].innerText, field.children[i - 1].style.borderTop.match("(rgb)\(.*\)")[2]);
+                        let rgb = field.children[i - 1].style.borderTop.match("(rgb)\(.*\)")[2].replace(".*[\(|\)].*", "").split(",");
+                        console.log(list.children[i - 1].children[0].innerText, rgb);
                         break;
                     }
 
