@@ -28,7 +28,8 @@ var time;
                 break;
 
             case 1:
-                console.log(time);
+                let deg = time / 25 * 36;
+                console.log(deg, time);
 
                 clearInterval(interval);
                 time = 0;
