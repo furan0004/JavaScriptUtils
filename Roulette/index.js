@@ -68,7 +68,6 @@ var colours = [];
         }
 
         loadRoulette(parts);
-        console.log(parts);
     });
 
     for(let i = 0; i < 3; i++) addBtn.click();
@@ -76,7 +75,7 @@ var colours = [];
 })();
 
 function loadRoulette(parts){
-    for(let i = 0; i < field.children.length; i++) field.children[i].remove();
+    for(let i = field.children.length - 1; i >= 0; i--) field.children[i].remove();
     
     let a = 0;
     for(let i = 0; i < parts.length; i++) a += parts[i].length;
@@ -95,8 +94,6 @@ function loadRoulette(parts){
         let horizontal = vertical * Math.tan(angle / 2);
         let rgb = colourConverter.HSVtoRGB((360 / Math.PI) * (currentAngle + angle * Math.random()), 1, 1);
         let colour = `rgb(${256 * rgb.r}, ${256 * rgb.g}, ${256 * rgb.b})`;
-
-        console.log(rgb);
 
         part.style.borderTop = `${colour} solid ${vertical}px`;
         part.style.borderBottom = `${colour} solid ${vertical}px`
