@@ -29,7 +29,16 @@ var time;
 
             case 1:
                 let deg = (time / 25 * 36 - list.children[0].children[1].value) % 360;
+                let pos = 0;
                 console.log(deg, time, deg / 180);
+                for(let i = 0; i < list.children.length; i++){
+                    if(pos > deg / 180){
+                        console.log(list.children[i - 1].children[0].innerText);
+                        break;
+                    }
+
+                    pos += list.children[i].children[1].value;
+                }
 
                 clearInterval(interval);
                 time = 0;
