@@ -47,7 +47,7 @@ export class colourConverter{
     
         if(hue == void 0) hue = ((hue % 360) + 360) % 360;
     
-        let C = V ** type * saturation;
+        let C = value ** type * saturation;
         let _hue = hue / 60;
         let X = C * (1 - Math.abs(_hue % 2 - 1));
     
