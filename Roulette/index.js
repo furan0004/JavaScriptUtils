@@ -1,6 +1,8 @@
 import{colourConverter} from "../scripts/colour.js"
 import { sumByArray } from "../scripts/functions.js";
 
+var syncBtn = document.getElementById("sync");
+
 var addBtn = document.getElementById("addButton");
 var list = document.getElementById("list");
 
@@ -9,10 +11,7 @@ var field = document.getElementsByClassName("roulette-field")[0];
 var colours = [];
 
 (function(){
-    var parts = [1, 2, 1, 2];
-    loadRoulette(parts);
-
-    let listener = function(event){
+        let addListener = function(event){
         let row = document.createElement("div");
         row.classList.add("row");
 
@@ -32,7 +31,7 @@ var colours = [];
         /*let createBtn = document.createElement("span");
         createBtn.classList.add("btn");
         createBtn.innerText = "↑";
-        createBtn.addEventListener("click", listener);*/
+        createBtn.addEventListener("click", addListener);*/
 
         let removeBtn = document.createElement("span");
         removeBtn.classList.add("btn");
@@ -53,14 +52,32 @@ var colours = [];
         syncLabel();
     };
 
-    addBtn.addEventListener("click", listener);
+    addBtn.addEventListener("click", addListener);
+
+    syncBtn.addEventListener("click", function(){
+        let parts = [];
+
+        let rows = list.children;
+        for(let i = 0; i < rows.length - 1; i++){
+            let part = {
+                length: parseInt(rows[i].children[1].innerText),
+                colour: null,
+            };
+
+            parts.push(part);
+        }
+
+        loadRoulette(parts);
+    });
+
+    for(let i = 0; i < 3; i++) addBtn.click();
 })();
 
 function loadRoulette(parts){
     for(let i = 0; i < field.children.length; i++) field.children[i].remove();
-
-    let a = sumByArray(parts);
-    let colourElements = "ABCD";
+    
+    let a = 0;
+    for(let i = 0; i < parts.length; i++) a += parts[i].length;
 
     let radius = 150;
     field.style.width = `${radius*2}px`;
