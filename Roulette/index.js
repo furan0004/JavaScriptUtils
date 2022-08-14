@@ -85,7 +85,7 @@ function loadRoulette(parts){
     field.style.width = `${radius*2}px`;
     field.style.borderRadius = `${radius}px`;
 
-    let currentAngle = -Math.PI * parts[0] / (2 * a);
+    let currentAngle = -Math.PI * parts[0].length / (2 * a);
     for(let i = 0; i < parts.length; i++){
         let part = document.createElement("div");
         part.classList.add("roulette-part");
