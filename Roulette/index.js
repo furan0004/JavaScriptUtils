@@ -23,6 +23,8 @@ var field = document.getElementsByClassName("roulette-field")[0];
         let rgb = colourConverter.HSVtoRGB(360 * Math.random(), 1, 1);
         let colour = colourConverter.RGBtoColourCode(rgb.r, rgb.g, rgb.b);
 
+        console.log(rgb);
+
         part.style.borderTop = `${colour} solid ${vertical}px`;
         part.style.borderBottom = `${colour} solid ${vertical}px`
         part.style.borderLeft = `transparent solid ${horizontal}px`;
