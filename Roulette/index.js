@@ -23,6 +23,7 @@ var colours = [];
                 break;
 
             case 1:
+                alert(field.style.rotate);
                 break;
         }
 
