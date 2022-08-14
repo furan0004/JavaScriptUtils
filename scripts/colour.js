@@ -1,8 +1,6 @@
 import{multiResult} from "../scripts/multiResult.js"
 import{convertToNthDecimal} from "../scripts/functions.js"
 
-const symbol = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
 export class colourConverter{
     static RGBtoColourCode(r, g, b, a = 255){
         return `#${multiResult(convertToNthDecimal, [[r, 16], [g, 16], [b, 16], [a, 16]]).join("")}`;

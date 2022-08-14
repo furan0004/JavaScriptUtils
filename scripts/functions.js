@@ -1,4 +1,6 @@
 export function convertToNthDecimal(decimal, N){
+    const symbol = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
     // N is in [1, 36]
     if((N - 1)*(N - 36) > 0) return void 0;
     decimal = Math.floor(decimal);
