@@ -23,7 +23,7 @@ var colours = [];
                 break;
 
             case 1:
-                console.log(event.target.css);
+                console.log(getComputedStyle(event.target).transform);
                 break;
         }
 
