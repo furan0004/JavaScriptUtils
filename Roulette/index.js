@@ -19,14 +19,14 @@ var colours = [];
 
         switch(index){
             case 0:
-                field.style.animation = "spin 1ms infinite";
+                
                 break;
 
             case 1:
-                field.styleanimation = "";
                 break;
         }
 
+        field.style.animation = `spin ${1 - index}ms infinite`;
         event.target.innerText = labelText[1 - index]; 
     });
 
