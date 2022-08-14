@@ -1,3 +1,5 @@
+import{colourConverter} from "../scripts/colour.js"
+
 var parts = [1, 2, 1, 2];
 
 var field = document.getElementsByClassName("roulette-field")[0];
@@ -18,8 +20,8 @@ var field = document.getElementsByClassName("roulette-field")[0];
         let angle = Math.PI * parts[i] / a;
         let vertical = radius;
         let horizontal = vertical * Math.tan(angle / 2);
-        let colour = "#";
-        for(let i = 0; i < 6; i++) colour += colourElements.charAt(Math.floor(Math.random() * colourElements.length));
+        let rgb = colourConverter.HSVtoRGB(360 * Math.random(), 1, 1);
+        let colour = colourConverter.RGBtoColourCode(rgb.r, rgb.g, rgb.b);
 
 
         part.style.borderTop = `${colour} solid ${vertical}px`;
