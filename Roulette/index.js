@@ -1,6 +1,7 @@
 import{colourConverter} from "../scripts/colour.js"
 import { sumByArray } from "../scripts/functions.js";
 
+var spinBtn = document.getElementById("spin");
 var syncBtn = document.getElementById("sync");
 
 var addBtn = document.getElementById("addButton");
@@ -11,7 +12,41 @@ var field = document.getElementsByClassName("roulette-field")[0];
 var colours = [];
 
 (function(){
-        let addListener = function(event){
+    spinBtn.addEventListener("click", function(event){
+        let labelText = ["Spin!", "Stop!"];
+        let label = event.target.innerText;
+        let index = labelText.indexOf(label);
+
+        switch(index){
+            case 0:
+                field.style.animation = "spin 1ms infinite";
+                break;
+
+            case 1:
+                field.styleanimation = "";
+                break;
+        }
+
+        event.target.innerText = labelText[1 - index]; 
+    });
+
+    syncBtn.addEventListener("click", function(){
+        let parts = [];
+
+        let rows = list.children;
+        for(let i = 0; i < rows.length - 1; i++){
+            let part = {
+                length: parseInt(rows[i].children[1].value),
+                colour: null,
+            };
+
+            parts.push(part);
+        }
+
+        loadRoulette(parts);
+    });
+
+    let addListener = function(event){
         let row = document.createElement("div");
         row.classList.add("row");
 
@@ -53,22 +88,6 @@ var colours = [];
     };
 
     addBtn.addEventListener("click", addListener);
-
-    syncBtn.addEventListener("click", function(){
-        let parts = [];
-
-        let rows = list.children;
-        for(let i = 0; i < rows.length - 1; i++){
-            let part = {
-                length: parseInt(rows[i].children[1].value),
-                colour: null,
-            };
-
-            parts.push(part);
-        }
-
-        loadRoulette(parts);
-    });
 
     for(let i = 0; i < 3; i++) addBtn.click();
     syncBtn.click();
