@@ -30,11 +30,11 @@ var time;
             case 1:
                 let a = 0;
                 for(let i = 0; i < list.children.length - 1; i++) a += list.children[i].children[1].value;
-                let deg = time * 360 - 180 * list.children[0].children[1].value / (2 * a);
+                let deg = (time * 360 - 180 * list.children[0].children[1].value / (2 * a)) % 180;
                 let pos = 0;
-                console.log(deg, time, deg / 180);
+                console.log(deg, time, deg);
                 for(let i = 0; i < list.children.length - 1; i++){
-                    if(pos > deg / 180){
+                    if(pos > a * deg / 180){
                         let rgb = field.children[i - 1].style.borderTop.match(/(rgb)\(.*\)/)[0].replace(/(rgb|[\(\)])/g, "").split(",");
                         console.log(list.children[i - 1].children[0].innerText, rgb);
                         break;
