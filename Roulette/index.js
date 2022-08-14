@@ -29,14 +29,15 @@ var colours = [];
         nameInput.type = "text";
         nameInput.placeholder = "name";
 
-        let createBtn = document.createElement("span");
+        /*let createBtn = document.createElement("span");
         createBtn.classList.add("btn");
         createBtn.innerText = "↑";
-        createBtn.addEventListener("click", listener);
+        createBtn.addEventListener("click", listener);*/
 
         let removeBtn = document.createElement("span");
         removeBtn.classList.add("btn");
         removeBtn.innerText = "×";
+        removeBtn.style.color = "#FF0000";
         removeBtn.addEventListener("click", function(){
             row.remove();
             syncLabel();
@@ -93,7 +94,7 @@ function loadRoulette(parts){
 function syncLabel(){
     let rows = list.children;
     for(let i = 0; i < rows.length - 1; i++){
-        rows[i].children[0].innerText = i;
+        rows[i].children[0].innerText = i + 1;
     }
 }
 

@@ -57,4 +57,12 @@
 .btn{
     width: auto;
     height: 100%;
+    aspect-ratio: 1;
+
+    text-align: center;
+    background: #FFFFFF;
+}
+
+.btn:hover{
+    background: #F0F0F0;
 }
