@@ -60,7 +60,7 @@ var colours = [];
         let rows = list.children;
         for(let i = 0; i < rows.length - 1; i++){
             let part = {
-                length: parseInt(rows[i].children[1].innerText),
+                length: parseInt(rows[i].children[1].value),
                 colour: null,
             };
 
