@@ -1,11 +1,64 @@
 import{colourConverter} from "../scripts/colour.js"
+import { sumByArray } from "../scripts/functions.js";
 
-var parts = [1, 2, 1, 2];
+var addBtn = document.getElementById("addButton");
+var list = document.getElementById("list");
 
 var field = document.getElementsByClassName("roulette-field")[0];
 
+var colours = [];
+
 (function(){
-    let a = sum(parts);
+    var parts = [1, 2, 1, 2];
+    loadRoulette(parts);
+
+    let listener = function(event){
+        let row = document.createElement("div");
+        row.classList.add("row");
+
+        let label = document.createElement("span");
+        label.classList.add("label");
+
+        let lengthInput = document.createElement("input");
+        lengthInput.type = "number";
+        lengthInput.min = 1;
+        lengthInput.value = 1;
+        lengthInput.placeholder = "length";
+
+        let nameInput = document.createElement("input");
+        nameInput.type = "text";
+        nameInput.placeholder = "name";
+
+        let createBtn = document.createElement("span");
+        createBtn.classList.add("btn");
+        createBtn.innerText = "↑";
+        createBtn.addEventListener("click", listener);
+
+        let removeBtn = document.createElement("span");
+        removeBtn.classList.add("btn");
+        removeBtn.innerText = "×";
+        removeBtn.addEventListener("click", function(){
+            row.remove();
+            syncLabel();
+        });
+
+        row.appendChild(label);
+        row.appendChild(lengthInput);
+        row.appendChild(nameInput);
+        row.appendChild(createBtn);
+        row.appendChild(removeBtn);
+
+        list.insertBefore(row, event.target);
+        syncLabel();
+    };
+
+    addBtn.addEventListener("click", listener);
+})();
+
+function loadRoulette(parts){
+    for(let i = 0; i < field.children.length; i++) field.children[i].remove();
+
+    let a = sumByArray(parts);
     let colourElements = "ABCD";
 
     let radius = 150;
@@ -35,12 +88,12 @@ var field = document.getElementsByClassName("roulette-field")[0];
         
         field.appendChild(part);
     }
-})();
-
-
-function sum(array){
-    let result = 0;
-    for(let i = 0; i < array.length; i++) result += array[i];
-
-    return result;
 }
+
+function syncLabel(){
+    let rows = list.children;
+    for(let i = 0; i < rows.length - 1; i++){
+        rows[i].children[0].innerText = i;
+    }
+}
+

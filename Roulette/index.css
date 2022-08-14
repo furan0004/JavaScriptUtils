@@ -4,6 +4,8 @@
     padding: 16px 0;
 
     background: #FFFFFF;
+    border-top: #000000 solid;
+    border-bottom: #000000 solid;
 }
 
 .roulette-field{
@@ -35,4 +37,24 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+.row{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.label{
+    width: auto;
+    height: 100%;
+    
+    text-align: left;
+}
+
+
+.btn{
+    width: auto;
+    height: 100%;
 }
