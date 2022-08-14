@@ -28,7 +28,9 @@ var time;
                 break;
 
             case 1:
-                let deg = (time / 25 * 36 - list.children[0].children[1].value) % 360;
+                let a = 0;
+                for(let i = 0; i < list.children.length; i++) a += list.children[i].children[1].value;
+                let deg = (time / 25 * 36 - 180 * list.children[0].children[1].value / a) % 360;
                 let pos = 0;
                 console.log(deg, time, deg / 180);
                 for(let i = 0; i < list.children.length; i++){
