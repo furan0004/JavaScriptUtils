@@ -1,0 +1,27 @@
+.toggle_item{
+    width: auto;
+    height: auto;
+    margin: 4px;
+    padding: 8px 16px;
+
+    border-radius: 4px;
+    text-align: center;
+    user-select: none;
+}
+
+.toggle_item *{
+    user-select: none;
+}
+
+
+.toggle_true{
+    color: #000000;
+    background: #FFFFFF;
+    border: #000000 solid 1px;
+}
+
+.toggle_false{
+    color: #FFFFFF;
+    background: #000000;
+    border: #FFFFFF solid 1px;
+}

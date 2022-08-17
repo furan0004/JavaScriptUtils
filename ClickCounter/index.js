@@ -22,7 +22,7 @@ counter.onclick = function(){
 
         let label = document.createElement("p");
         label.classList.add("resultRowLabel");
-        label.innerText = `${count} count in ${duration / 1000} seconds`;
+        label.innerText = `${count} clicks in ${duration / 1000} seconds`;
 
         icon.appendChild(iconLabel);
         row.appendChild(icon);

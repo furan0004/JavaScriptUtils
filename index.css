@@ -2,6 +2,7 @@
     width: fit-content;
     height: 32px;
     display: flex;
+    margin: 4px 0;
     padding: 2px 4px;
 
     border-radius: 8px;

@@ -1,0 +1,26 @@
+#characters{
+    width: 100%;
+    height: auto;
+
+    display: block;
+    background: #FFFFFF;
+}
+
+.section-header{
+    width: 100%;
+    height: auto;
+    margin: 4px;
+
+    background: linear-gradient(90deg, #00000040, #FFFFFF20);
+}
+
+.toggle-button-holder{
+    width: 100%;
+    height: auto;
+    margin: 4px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    background: #FFFFFF;
+}

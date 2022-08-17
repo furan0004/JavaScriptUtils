@@ -3,12 +3,28 @@
         <div class="topbar" id="top"></div>
 
         <div class="line">
+            <textarea id="result" placeholder="Result"></textarea>
+            <input id="genLen" type="number" min="1" placeholder="Length" value="16">
+            <button id="genBtn">Generate</button>
+
+
+            <div id="characters">
+                <div class="section-header" id="group0">
+                    Standard Characters
+                </div>
+                <div class="toggle-button-holder"></div>
+
+                <div class="section-header" id="group1">
+                    Others
+                </div>
+                <div class="toggle-button-holder"></div>
+            </div>
             
         </div>
     </body>
 
     <head>
-        <title> Roulette </title>
+        <title> Random String </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
@@ -19,6 +35,10 @@
         <link rel="stylesheet" href="https://pages.kurosaki.love/styles/top.css">
 
         <script src="../scripts/univ.js"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+
+        <link rel="stylesheet" href="../styles/toggleButton.css">
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RB6PRF5KRD"></script>
