@@ -1,0 +1,10 @@
+table{
+    background: #000000;
+}
+
+th, td{
+    text-align: center;
+
+    background: #FFFFFF;
+    border: #FFFFFF solid 1px;
+}
