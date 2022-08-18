@@ -34,7 +34,6 @@ import {characters} from "./characters.js";
         }
 
         resultDisplay.value = createRandomString(map, lengthInput.value);
-        console.log(map);
     });
 
     let holders = document.getElementsByClassName("toggle-button-holder");
@@ -76,8 +75,6 @@ import {characters} from "./characters.js";
 
                     clearInterval(interval);
                 }
-
-                console.log(time);
             }, 100);
         });
 
