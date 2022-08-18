@@ -1,4 +1,4 @@
-class toggleButton{
+export class toggleButton{
 
     static CLASS = {
         ITEM: "toggle_item",

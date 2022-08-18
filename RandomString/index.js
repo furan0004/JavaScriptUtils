@@ -1,5 +1,5 @@
 import {toggleButton} from "../scripts/toggleButton.js";
-import {characters} from "characters.js";
+import {characters} from "./characters.js";
 
 (function(){
     let resultDisplay = document.getElementById("result");

@@ -1,4 +1,4 @@
-const characters = {
+export const characters = {
     Number: "0123456789",
 
     English: {
