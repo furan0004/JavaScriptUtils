@@ -1,7 +1,6 @@
-import superIndex from "https://pages.kurosaki.love/scripts/index.js";
+import topbar from "https://pages.kurosaki.love/scripts/index.js";
 
 function fixTopBar(title){
-    let topbar = TopBars[0];
     topbar.setTitle(title || document.title || "黒咲くろんの手作り");
     topbar.setHome("https://utils.kurosaki.love");
     topbar.setMenu([]);
