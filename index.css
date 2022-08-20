@@ -10,10 +10,6 @@
     background: #FFFFFF;
 }
 
-.button:hover{
-    border-width: 2px;
-}
-
 .button *{
     user-select: none;
 }
@@ -24,4 +20,8 @@
     margin: auto;
 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-label:hover{
+    text-decoration: underline;
 }
