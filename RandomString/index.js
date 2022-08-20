@@ -1,5 +1,7 @@
-import {toggleButton} from "../scripts/toggleButton.js";
-import {characters} from "./characters.js";
+import { toggleButton } from "../scripts/toggleButton.js";
+import { restrictLength } from "../scripts/functions.js";
+import { createRandomString } from "../scripts/functions.js";
+import characters from "./characters.json" assert {type: "json"};
 
 (function(){
     let resultDisplay = document.getElementById("result");
@@ -86,18 +88,5 @@ import {characters} from "./characters.js";
     document.getElementById(`group1`).click();
 })();
 
-function restrictLength(str, restriction, restrictedSymbol = ""){
-    return (str.length > restriction) ? str.substring(0, restriction) + restrictedSymbol : str;
-}
 
-function createRandomString(map, length){
-    if(map.length == 0) return "";
 
-    let result = "";
-
-    for(let i = 0; i < length; i++) {
-        result += map[Math.floor(Math.random() * map.length)];
-    }
-    
-    return result;
-}

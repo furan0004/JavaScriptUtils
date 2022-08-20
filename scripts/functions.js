@@ -24,3 +24,19 @@ export function sumByArray(array){
 
     return result;
 }
+
+export function restrictLength(str, restriction, restrictedSymbol = ""){
+    return (str.length > restriction) ? str.substring(0, restriction) + restrictedSymbol : str;
+}
+
+export function createRandomString(map, length){
+    if(map.length == 0) return "";
+
+    let result = "";
+
+    for(let i = 0; i < length; i++) {
+        result += map[Math.floor(Math.random() * map.length)];
+    }
+    
+    return result;
+}
