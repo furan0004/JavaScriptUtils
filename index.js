@@ -1,5 +1,8 @@
 import pageList from "./data/pages.json" assert {type: "json"};
 
+import indexStyle from "./index.css" assert {type: "css"};
+document.adoptedStyleSheets.push(indexStyle);
+
 import indexListItemStyle from "./styles/indexListItem.css" assert {type: "css"};
 document.adoptedStyleSheets.push(indexListItemStyle);
 
