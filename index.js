@@ -30,7 +30,7 @@ function createListItem(info){
         icon.src = info.iconPath || `${info.path}/icon.png`;
         
     }else{
-        icon.style.background = "#000000";
+        icon.style.background = "#FF8080";
     }
 
     let textRows = document.createElement("div");
@@ -44,8 +44,9 @@ function createListItem(info){
     title.classList.add("index-item-title");
     title.innerText = info.name;
 
-    let description = document.createElement("div");
+    let description = document.createElement("span");
     description.classList.add("index-item-text");
+    description.innerText = info.description;
     
     anchor.appendChild(row);
     row.appendChild(body);

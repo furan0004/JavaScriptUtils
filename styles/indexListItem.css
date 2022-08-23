@@ -42,7 +42,16 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.index-item-title:hover{
+    text-decoration: underline;
+}
+
 .index-item-text{
+    height: 100%;
+
     margin: auto 4px;
     font-size: x-small;
+
+    overflow-y: hidden;
+    overflow-wrap: anywhere;
 }
