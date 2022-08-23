@@ -1,0 +1,49 @@
+[
+    {
+        "name": "",
+        "path": "",
+        "hidden": false
+    },
+
+    {
+        "name": "Index",
+        "path": "/",
+        "hidden": true
+    },
+
+    {
+        "name": "Click Counter",
+        "path": "/ClickCounter",
+        "hidden": false
+    },
+    
+    {
+        "name": "Product Table",
+        "path": "/ProductTable",
+        "hidden": false
+    },
+    
+    {
+        "name": "Random String Generator",
+        "path": "/RandomString",
+        "hidden": false
+    },
+    
+    {
+        "name": "Roulette",
+        "path": "/Roulette",
+        "hidden": true
+    },
+
+    {
+        "name": "SI-Prefix Concentration",
+        "path": "SI-Prefix-Concentration",
+        "hidden": false
+    },
+
+    {
+        "name": "Text Reorder",
+        "path": "Text-Reorder",
+        "hidden": false
+    }
+]
