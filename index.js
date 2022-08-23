@@ -27,14 +27,15 @@ function createListItem(info){
     let icon = document.createElement("img");
     icon.classList.add("index-item-icon");
     if(info.iconAvailable){
-        icon.background = "#000000";
+        icon.src = info.iconPath || `${info.path}/icon.png`;
+        
     }else{
-        icon.src = info.iconPath | `${info.path}/icon.png`;
+        icon.background = "#000000";
     }
 
     let textRows = document.createElement("div");
     textRows.classList.add("index-item-text-rows");
-    
+
     let textRow = [document.createElement("div"), document.createElement("div")];
     textRow[0].classList.add("index-item-text-row");
     textRow[1].classList.add("index-item-text-row");
