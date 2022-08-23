@@ -2,6 +2,7 @@
     width: 100%;
     height: 80px;
     display: flex;
+    margin: 2px auto;
 
     background: lightgrey;
 }
