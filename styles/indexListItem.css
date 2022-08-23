@@ -7,6 +7,18 @@
     background: lightgrey;
 }
 
+.index-item-row:nth-child(3n) .index-item-icon{
+    background: #FF8080;
+}
+
+.index-item-row:nth-child(3n + 1) .index-item-icon{
+    background: #80FF80;
+}
+
+.index-item-row:nth-child(3n + 2) .index-item-icon{
+    background: #8080FF;
+}
+
 .index-item-body{
     display: flex;
     width: calc(100% - 16px);
