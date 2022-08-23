@@ -11,7 +11,7 @@
         "name": "Index",
         "path": "/",
         "hidden": true,
-        "icon-available": false,
+        "iconAvailable": false,
         "iconPath": null
     },
 
@@ -19,7 +19,7 @@
         "name": "Click Counter",
         "path": "/ClickCounter",
         "hidden": false,
-        "icon-available": false,
+        "iconAvailable": false,
         "iconPath": null
     },
     
@@ -27,7 +27,7 @@
         "name": "Product Table",
         "path": "/ProductTable",
         "hidden": false,
-        "icon-available": false,
+        "iconAvailable": false,
         "iconPath": null
     },
     
@@ -35,7 +35,7 @@
         "name": "Random String Generator",
         "path": "/RandomString",
         "hidden": false,
-        "icon-available": false,
+        "iconAvailable": false,
         "iconPath": null
     },
     
@@ -43,7 +43,7 @@
         "name": "Roulette",
         "path": "/Roulette",
         "hidden": true,
-        "icon-available": false,
+        "iconAvailable": false,
         "iconPath": null
     },
 
@@ -51,7 +51,7 @@
         "name": "SI-Prefix Concentration",
         "path": "SI-Prefix-Concentration",
         "hidden": false,
-        "icon-available": false,
+        "iconAvailable": false,
         "iconPath": null
     },
 
@@ -59,7 +59,7 @@
         "name": "Text Reorder",
         "path": "Text-Reorder",
         "hidden": false,
-        "icon-available": false,
+        "iconAvailable": false,
         "iconPath": null
     }
 ]
