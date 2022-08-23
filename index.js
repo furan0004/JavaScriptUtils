@@ -33,6 +33,8 @@ function createListItem(info){
     }
 
     let textRows = document.createElement("div");
+    textRows.classList.add("index-item-text-rows");
+    
     let textRow = [document.createElement("div"), document.createElement("div")];
     textRow[0].classList.add("index-item-text-row");
     textRow[1].classList.add("index-item-text-row");
