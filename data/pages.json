@@ -4,7 +4,8 @@
         "path": "",
         "hidden": true,
         "iconAvailable": false,
-        "iconPath": null
+        "iconPath": null,
+        "description": ""
     },
 
     {
@@ -12,7 +13,8 @@
         "path": "/",
         "hidden": true,
         "iconAvailable": false,
-        "iconPath": null
+        "iconPath": null,
+        "description": ""
     },
 
     {
@@ -20,7 +22,8 @@
         "path": "/ClickCounter",
         "hidden": false,
         "iconAvailable": false,
-        "iconPath": null
+        "iconPath": null,
+        "description": "Measure your click speed."
     },
     
     {
@@ -28,7 +31,8 @@
         "path": "/ProductTable",
         "hidden": false,
         "iconAvailable": false,
-        "iconPath": null
+        "iconPath": null,
+        "description": "九九 tables of other base."
     },
     
     {
@@ -36,7 +40,8 @@
         "path": "/RandomString",
         "hidden": false,
         "iconAvailable": false,
-        "iconPath": null
+        "iconPath": null,
+        "description": "Generate random string."
     },
     
     {
@@ -44,7 +49,8 @@
         "path": "/Roulette",
         "hidden": true,
         "iconAvailable": false,
-        "iconPath": null
+        "iconPath": null,
+        "description": "Only roulette."
     },
 
     {
@@ -52,7 +58,8 @@
         "path": "SI-Prefix-Concentration",
         "hidden": false,
         "iconAvailable": false,
-        "iconPath": null
+        "iconPath": null,
+        "description": "Concentration game in SI-Prefix."
     },
 
     {
@@ -60,6 +67,7 @@
         "path": "Text-Reorder",
         "hidden": false,
         "iconAvailable": false,
-        "iconPath": null
+        "iconPath": null,
+        "description": "Reorder string. Invert, replace, repeat, and some more."
     }
 ]
