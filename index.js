@@ -16,6 +16,7 @@ document.adoptedStyleSheets.push(indexListItemStyle);
 
 function createListItem(info){
     let anchor = document.createElement("a");
+    anchor.classList.add("index-item-anchor");
     anchor.href = info.path;
 
     let row = document.createElement("div");
