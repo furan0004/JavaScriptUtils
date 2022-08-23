@@ -1,0 +1,41 @@
+.index-item-row{
+    width: 100%;
+    height: 80px;
+    display: flex;
+
+    background: lightgrey;
+}
+
+.index-item-body{
+    display: flex;
+    width: calc(100% - 16px);
+    height: 64px;
+    margin: auto;
+
+    background: #FFFFFF;
+}
+
+.index-item-icon{
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.index-item-text-row{
+    width: 100%;
+    height: 50%;
+    max-height: 50%;
+    display: flex;
+}
+
+.index-item-title{
+    margin: auto 2px;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.index-item-text{
+    margin: auto 4px;
+    font-size: x-small;
+}

@@ -2,48 +2,64 @@
     {
         "name": "",
         "path": "",
-        "hidden": false
+        "hidden": false,
+        "iconAvailable": false,
+        "iconPath": null
     },
 
     {
         "name": "Index",
         "path": "/",
-        "hidden": true
+        "hidden": true,
+        "icon-available": false,
+        "iconPath": null
     },
 
     {
         "name": "Click Counter",
         "path": "/ClickCounter",
-        "hidden": false
+        "hidden": false,
+        "icon-available": false,
+        "iconPath": null
     },
     
     {
         "name": "Product Table",
         "path": "/ProductTable",
-        "hidden": false
+        "hidden": false,
+        "icon-available": false,
+        "iconPath": null
     },
     
     {
         "name": "Random String Generator",
         "path": "/RandomString",
-        "hidden": false
+        "hidden": false,
+        "icon-available": false,
+        "iconPath": null
     },
     
     {
         "name": "Roulette",
         "path": "/Roulette",
-        "hidden": true
+        "hidden": true,
+        "icon-available": false,
+        "iconPath": null
     },
 
     {
         "name": "SI-Prefix Concentration",
         "path": "SI-Prefix-Concentration",
-        "hidden": false
+        "hidden": false,
+        "icon-available": false,
+        "iconPath": null
     },
 
     {
         "name": "Text Reorder",
         "path": "Text-Reorder",
-        "hidden": false
+        "hidden": false,
+        "icon-available": false,
+        "iconPath": null
     }
 ]
