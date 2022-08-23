@@ -30,7 +30,7 @@ function createListItem(info){
         icon.src = info.iconPath || `${info.path}/icon.png`;
         
     }else{
-        icon.background = "#000000";
+        icon.style.background = "#000000";
     }
 
     let textRows = document.createElement("div");
