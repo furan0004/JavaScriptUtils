@@ -29,8 +29,6 @@ function createListItem(info){
     if(info.iconAvailable){
         icon.src = info.iconPath || `${info.path}/icon.png`;
         
-    }else{
-        icon.style.background = "#FF8080";
     }
 
     let textRows = document.createElement("div");
