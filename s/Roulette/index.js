@@ -1,5 +1,8 @@
-import{colourConverter} from "../scripts/colour.js"
-import { sumByArray } from "../scripts/functions.js";
+import{colourConverter} from "/scripts/colour.js"
+import { sumByArray } from "/scripts/functions.js";
+
+import indexStyle from "./index.css" assert {type: "css"};
+document.adoptedStyleSheets.push(indexStyle);
 
 var spinBtn = document.getElementById("spin");
 var syncBtn = document.getElementById("sync");

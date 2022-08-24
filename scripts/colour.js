@@ -1,5 +1,5 @@
-import{multiResult} from "../scripts/multiResult.js"
-import{convertToNthDecimal} from "../scripts/functions.js"
+import{multiResult} from "/scripts/multiResult.js"
+import{convertToNthDecimal} from "/scripts/functions.js"
 
 export class colourConverter{
     static RGBtoColourCode(r, g, b, a = 255){

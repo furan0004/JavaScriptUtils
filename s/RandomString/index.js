@@ -1,7 +1,10 @@
-import { toggleButton } from "../scripts/toggleButton.js";
-import { restrictLength } from "../scripts/functions.js";
-import { createRandomString } from "../scripts/functions.js";
+import { toggleButton } from "/scripts/toggleButton.js";
+import { restrictLength } from "/scripts/functions.js";
+import { createRandomString } from "/scripts/functions.js";
 import characters from "./characters.json" assert {type: "json"};
+
+import indexStyle from "./index.css" assert {type: "css"};
+document.adoptedStyleSheets.push(indexStyle);
 
 (function(){
     let resultDisplay = document.getElementById("result");

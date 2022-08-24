@@ -3,19 +3,27 @@
         <div class="topbar" id="top"></div>
 
         <div class="line">
-            <input id="base" type="number" min="2" max="16" value="10">
-            <table id="table"></table>            
+            <div id="field"></div>
+            <div id="controll">
+                <button id="resetButton">Reset</button>
+                <p id="turnCount"></p>
+            </div>
+
+            <span>
+                ペアとなった接頭辞の値の積が1であればカードが消え、場のカードが全て消えればクリア。
+            </span>
+
+            <table id="prefixTable"></table>
         </div>
     </body>
 
     <head>
-        <title> Product Table </title>
+        <title> SI-Prefix Concentration </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-        <script type="module" src="../scripts/univ.js"></script>
+        <script type="module" src="/scripts/univ.js"></script>
         <script type="module" src="index.js"></script>
-        <link rel="stylesheet" href="index.css">
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RB6PRF5KRD"></script>
@@ -26,6 +34,5 @@
 
         gtag('config', 'G-RB6PRF5KRD');
         </script>
-
     </head>
 </html>

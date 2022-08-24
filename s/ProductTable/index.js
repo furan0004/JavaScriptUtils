@@ -1,4 +1,7 @@
-import {convertToNthDecimal} from "../scripts/functions.js";
+import {convertToNthDecimal} from "/scripts/functions.js";
+
+import indexStyle from "./index.css" assert {type: "css"};
+document.adoptedStyleSheets.push(indexStyle);
 
 var input = document.getElementById("base");
 var table = document.getElementById("table");

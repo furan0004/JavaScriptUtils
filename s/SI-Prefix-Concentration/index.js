@@ -1,5 +1,8 @@
 import prefixes from "./prefixes.json" assert {type: "json"};
 
+import indexStyle from "./index.css" assert {type: "css"};
+document.adoptedStyleSheets.push(indexStyle);
+
 var field = document.getElementById("field");
 var cache;
 var count = 0;

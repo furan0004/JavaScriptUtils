@@ -1,3 +1,6 @@
+import toggleButtonStyle from "/styles/toggleButton.css" assert {type: "css"};
+document.adoptedStyleSheets.push(toggleButtonStyle);
+
 export class toggleButton{
 
     static CLASS = {
