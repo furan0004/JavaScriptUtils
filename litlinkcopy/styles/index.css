@@ -15,10 +15,6 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#line > *{
-    margin: 8px auto;
-}
-
 #line > .pane, #line > * > .pane{
     width: calc(100% - 24px);
     height: auto;
@@ -31,6 +27,12 @@ body{
 
 
 /* profile */
+
+.profile{
+    width: 100%;
+    height: auto;
+    margin: 16px auto;
+}
 
 .profile-icon-holder{
     display: flex;

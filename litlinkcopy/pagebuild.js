@@ -40,6 +40,9 @@ var profile = {
     line.id = "line";
 
     //top
+    let profileHolder = document.createElement("div");
+    profileHolder.classList.add("profile");
+
     let iconHolder = document.createElement("div");
     iconHolder.classList.add("profile-icon-holder");
 
@@ -82,12 +85,13 @@ var profile = {
     profile.description.innerText = `Description\n${pageData.description}`;
 
 
+    line.appendChild(profileHolder);
     iconHolder.appendChild(profile.icon);
-    line.appendChild(iconHolder);
-    line.appendChild(profile.name);
-    line.appendChild(profile.tagShow);
-    line.appendChild(profile.socials);
-    line.appendChild(profile.description);
+    profileHolder.appendChild(iconHolder);
+    profileHolder.appendChild(profile.name);
+    profileHolder.appendChild(profile.tagShow);
+    profileHolder.appendChild(profile.socials);
+    profileHolder.appendChild(profile.description);
 
     //main stream
     for(let i = 0; i < pageData.items.length; i++){
