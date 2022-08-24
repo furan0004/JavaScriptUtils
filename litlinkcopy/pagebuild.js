@@ -159,12 +159,13 @@ function createItem(info){
         case "dynamic-pane":
             {
                 item.classList.add("dynamic-pane");
-                item.style.background = (info.background.charAt(0) == "#") ? info.background : `url("${info.background}"}`;
+                item.style.background = (info.background.substring(o, 1) == "#") ? info.background : `url("${info.background}"}`;
 
                 let anchor = document.createElement("a");
                 anchor.href = info.url;
 
                 let titleRow = document.createElement("div");
+                
 
                 let title = document.createElement("span");
 
