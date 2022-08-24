@@ -159,6 +159,7 @@ function createItem(info){
             {
                 item.classList.add("dynamic-pane");
                 item.style.background = (info.background.substring(0, 1) == "#") ? info.background : `url(${info.background})`;
+                item.style.backgroundSize = "cover";
 
                 let anchor = document.createElement("a");
                 anchor.href = info.url;
@@ -198,6 +199,8 @@ function createItem(info){
                 item.appendChild(titleRow);
                 titleRow.appendChild(title);
                 item.appendChild(mainPane);
+                mainPane.appendChild(iconRow);
+                messageRow.appendChild(icon);
                 mainPane.appendChild(messageRow);
                 messageRow.appendChild(message);
                 mainPane.appendChild(descriptionRow);
