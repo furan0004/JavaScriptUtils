@@ -59,7 +59,7 @@ var profile = {
     profile.socials = document.createElement("div");
     profile.socials.classList.add("profile-socials");
     
-    let keys = Object.keys(pageData.social);
+    let keys = Object.keys(pageData.social, a => a);
     for(let i = 0; i < keys.length; i++){
         let anchor = document.createElement("a");
         anchor.classList.add("profile-social-icon-anchor");
