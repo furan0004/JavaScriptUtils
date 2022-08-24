@@ -54,7 +54,7 @@ var profile = {
     profile.tagShow = document.createElement("div");
     profile.tagShow.classList.add("profile-tag-show");
     console.log(typeof pageData.tags, pageData.tags);
-    profile.tagShow.innerText = pageData.social.join(" / ");
+    profile.tagShow.innerText = pageData.tags.join(" / ");
 
     profile.socials = document.createElement("div");
     profile.socials.classList.add("profile-socials");
