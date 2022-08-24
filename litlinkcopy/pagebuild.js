@@ -111,5 +111,5 @@ function createItem(info){
             break;
     }
 
-    return result;
+    return item;
 }
