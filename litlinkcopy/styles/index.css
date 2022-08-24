@@ -1,7 +1,5 @@
 body{
     margin: 0;
-
-    background-color: lime;
 }
 
 a{
@@ -10,6 +8,7 @@ a{
 
 #line{
     width: 480px;
+    max-width: 480px;
     min-height: 100%;
     margin: auto;
 }
@@ -94,6 +93,6 @@ a{
 
 @media screen and (max-width: 480px) {
     #line{
-        width: 96%;
+        width: 90%;
     }
 }
