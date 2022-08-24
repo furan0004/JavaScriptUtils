@@ -57,6 +57,7 @@ var profile = {
 
     profile.socials = document.createElement("div");
     profile.socials.classList.add("profile-socials");
+    console.log(pageData.social);
     for(key in pageData.social){
         let anchor = document.createElement("a");
         anchor.href = pageData.social[key];
