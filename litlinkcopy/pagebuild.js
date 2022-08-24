@@ -1,11 +1,11 @@
-import pageData from "pagedata.json" assert {type: "json"};
+import pageData from "./pagedata.json" assert {type: "json"};
 import itemList from "./styles/master.json" assert {type: "json"};
 
 
 (function(){
     importItemmStyles();
 
-    
+
 })();
 
 
