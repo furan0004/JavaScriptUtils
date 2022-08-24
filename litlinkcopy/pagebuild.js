@@ -11,7 +11,7 @@ document.adoptedStyleSheets.push(itemStyle_1);
 document.adoptedStyleSheets.push(itemStyle_2);
 
 //import main css
-import indexStyle from "./index.css" assert {type: "css"};
+import indexStyle from "/litlinkcopy/styles/index.css" assert {type: "css"};
 document.adoptedStyleSheets.push(indexStyle);
 
 
