@@ -232,6 +232,7 @@ function createItem(info){
                 let description = document.createElement("span");
                 description.classList.add("def-font");
                 description.classList.add("string-pane-description");
+                description.innerText = info.description;
 
                 item.appendChild(titleRow);
                 titleRow.appendChild(title);
