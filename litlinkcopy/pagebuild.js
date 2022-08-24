@@ -65,8 +65,8 @@ var profile = {
         
         let img = document.createElement("img");
         img.src = {
-            "twitter": "https://res/images/twitter.svg",
-            "youtube": "https://res/images/youtube.svg",
+            "twitter": "https://pages.kurosaki.love/res/images/twitter.svg",
+            "youtube": "https://pages.kurosaki.love/res/images/youtube.svg",
         }[keys[i]];
 
         anchor.appendChild(img);
