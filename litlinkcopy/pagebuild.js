@@ -11,8 +11,8 @@ import itemList from "./styles/master.json" assert {type: "json"};
 async function importItemmStyles(){
     for(let i = 0; i < itemList.length; i++){
         let style = getStyle(itemList[i].path);
-        console.log(style);
-        document.adoptedStyleSheets.push(style.default);
+        console.log(style, Object.keys(style.default));
+        document.adoptedStyleSheets.push(style.default.default);
     }
 }
 
