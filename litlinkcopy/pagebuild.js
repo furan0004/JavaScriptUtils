@@ -67,8 +67,8 @@ var profile = {
         let img = document.createElement("img");
         img.classList.add("profile-social-icon");
         img.src = {
-            "twitter": "https://pages.kurosaki.love/res/images/twitter.svg",
-            "youtube": "https://pages.kurosaki.love/res/images/youtube.svg",
+            "twitter": "https://pages.kurosaki.love/res/images/twitter_dark.svg",
+            "youtube": "https://pages.kurosaki.love/res/images/youtube_dark.svg",
         }[keys[i]];
 
         anchor.appendChild(img);
