@@ -156,7 +156,7 @@ function createItem(info){
             break;
 
         case "dynamic-pane":
-            {
+            
                 item.classList.add("dynamic-pane");
                 item.style.background = (info.background.substring(0, 1) == "#") ? info.background : `url("${info.background}"}`;
 
@@ -172,7 +172,7 @@ function createItem(info){
                 anchor.appendChild(item);
 
                 return anchor;
-            }
+            
             break;
     }
 
