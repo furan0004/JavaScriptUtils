@@ -127,9 +127,29 @@ function createItem(info){
             icon.classList.add("simple-row-icon");
             icon.src = info.icon;
 
+            let textRowHolder = document.createElement("div");
+            textRowHolder.classList.add("simple-row-text-row-holder");
+
+            let textRows = [document.createElement("div"), document.createElement("div")];
+            textRows[0].classList.add("simple-row-text-row");
+            textRows[1].classList.add("simple-row-text-row");
+
+            let title = document.createElement("span");
+            title.classList.add("simple-row-title");
+            title.innerText = info.title;
+
+            let description = document.createElement("span");
+            description.classList.add("simple-row-description");
+            description.innerText = info.description;
+
             anchor.appendChild(item);
             item.appendChild(body);
             body.appendChild(icon);
+            body.appendChild(textRowHolder);
+            textRowHolder.appendChild(textRows[0]);
+            textRowHolder.appendChild(textRows[1]);
+            textRows[0].appendChild(title);
+            textRows[1].appendChild(description);
 
             return anchor;
             break;
