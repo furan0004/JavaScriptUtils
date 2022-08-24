@@ -21,6 +21,7 @@ var profile = {
     icon: null,
     name: null,
     tagShow: null,
+    socials: null,
     description: null,
 };
 
@@ -49,6 +50,23 @@ var profile = {
     profile.tagShow.classList.add("profile-tag-show");
     profile.innerText = pageData.tags.join(" / ");
 
+    profile.socials = document.createElement("div");
+    profile.socials.classList.add("profile-socials");
+    for(key in pageData.social){
+        let anchor = document.createElement("a");
+        anchor.href = pageData.key;
+        
+        let img = document.createElement("img");
+        img.src = {
+            "twitter": "https://res/images/twitter.svg",
+            "youtube": "https://res/images/youtube.svg",
+        }.key;
+
+        anchor.appendChild(img);
+        profile.socials.appendChild(anchor);
+    }
+
+
     profile.description = document.createElement("div");
     profile.description.classList.add("profile-description");
     profile.description.innerText = `Description\n${pageData.description}`;
@@ -57,6 +75,7 @@ var profile = {
     iconHolder.appendChild(profile.icon);
     line.appendChild(iconHolder);
     line.appendChild(profile.name);
+    line.appendChild(tagShow);
     line.appendChild(profile.description);
 
     //main stream
@@ -75,10 +94,14 @@ async function importItemmStyles(){
 }
 
 function createItem(info){
-    let result;
+    let item = document.createElement("div");
+    item.classList.add("pane");
 
     switch(info.type){
+        case "simple-row":
 
+
+            break;
     }
 
     return result;

@@ -57,6 +57,21 @@ body{
     text-align: center;
 }
 
+.profile-socials{
+    width: auto;
+    height: 32px;
+    display: flex;
+    margin: auto;
+}
+
+.profile-social-icon{
+    width: auto;
+    height: auto;
+    aspect-ratio: 1;
+
+    margin: 4px;
+}
+
 .profile-description{
     text-align: center;
     font-size: small;
