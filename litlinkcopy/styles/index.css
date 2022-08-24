@@ -17,12 +17,12 @@ body{
 }
 
 #line > *{
-    width: 100%;
-    height: auto;
     margin: 8px auto;
 }
 
 #line > div{
+    width: 100%;
+    height: auto;
     padding: 12px;
 
     background: #FFFFFF;
@@ -32,10 +32,15 @@ body{
 
 /* profile */
 
+.profile-icon-holder{
+    display: flex;
+}
+
 .profile-icon{
     width: 30%;
     height: auto;
     aspect-ratio: 1;
+    margin: 32px auto;
 
     border-radius: 100%;
 }
@@ -43,4 +48,6 @@ body{
 .profile-name{
     text-align: center;
     font-size: x-large;
+
+    background: transparent;
 }

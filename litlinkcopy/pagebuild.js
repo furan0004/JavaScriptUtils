@@ -33,6 +33,9 @@ var profile = {
     line.id = "line";
 
     //top
+    let iconHolder = document.createElement("div");
+    iconHolder.classList.add("profile-icon-holder");
+
     profile.icon = document.createElement("img");
     profile.icon.classList.add("profile-icon");
     profile.icon.src = pageData.icon;
@@ -41,7 +44,12 @@ var profile = {
     profile.name.classList.add("profile-name");
     profile.name.innerText = pageData.name;
 
+    profile.description = document.createElement("div");
+    profile.description.classList.add("profile-description");
+    profile.description.innerText = `Description\n${pageData.description}`;
 
+
+    iconHolder.appendChild(profile.icon);
     line.appendChild(profile.icon);
     line.appendChild(profile.name);
 
@@ -66,4 +74,6 @@ function createItem(info){
     switch(info.type){
 
     }
+
+    return result;
 }
