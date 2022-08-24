@@ -20,7 +20,7 @@ body{
     margin: 8px auto;
 }
 
-#line > div.pane{
+#line > .pane{
     width: calc(100% - 24%);
     height: auto;
     padding: 12px;
