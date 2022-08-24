@@ -30,7 +30,7 @@
         {
             "type": "string-pane",
             "title": "お問い合わせについて",
-            "description": ""
+            "description": "映像、イラスト、イラストMV、ロゴデザイン等 \n お力添えができそうなお話あれば是非お願い致します！ \n\n もちろんイラスト×映像、イラスト×デザインなど同時にご依頼頂いても大丈夫です。 \n\n ▶Twitter(@People_Hitobito)のDM \n\n ▶ hitobito.ht@gmail.com \n\n\n ※常時募集しております！3日以内には返信させて頂くと思いますが、反応なければお手数おかけしますがもう一度送って頂くか、TwitterのDMで送って頂ければ確実に反応できると思います。 \n\n ※納期や報酬等はご連絡の際にあらかじめご提示頂けますと大変助かります！"
         },
 
         {
@@ -67,7 +67,7 @@
 
         {
             "type": "simple-row",
-            "icon": "",
+            "icon": "/res/images/tik-tok.png",
             "url": "https://www.tiktok.com/@hitobito_ht?lang=ja-JP",
             "title": "TikTok",
             "description": ""
