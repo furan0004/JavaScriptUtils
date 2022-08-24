@@ -54,12 +54,12 @@ var profile = {
     profile.tagShow = document.createElement("div");
     profile.tagShow.classList.add("profile-tag-show");
     console.log(typeof pageData.tags, pageData.tags);
-    profile.innerText = Array.from(pageData.social).join(" / ");
+    profile.innerText = Array.from(pageData.social, a => a).join(" / ");
 
     profile.socials = document.createElement("div");
     profile.socials.classList.add("profile-socials");
     
-    let keys = Object.keys(pageData.social, a => a);
+    let keys = Object.keys(pageData.social);
     for(let i = 0; i < keys.length; i++){
         let anchor = document.createElement("a");
         anchor.classList.add("profile-social-icon-anchor");
