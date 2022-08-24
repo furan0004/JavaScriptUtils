@@ -163,6 +163,7 @@ function createItem(info){
                 item.classList.add("dynamic-pane");
                 item.style.background = (info.background.substring(0, 1) == "#") ? info.background : `url(${info.background})`;
                 item.style.backgroundSize = "cover";
+                item.style.width = "100%";
                 item.style.padding = "0";
 
                 let anchor = document.createElement("a");
