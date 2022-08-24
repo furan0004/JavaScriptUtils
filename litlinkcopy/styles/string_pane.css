@@ -12,4 +12,5 @@
 
 .string-pane-description{
     overflow-wrap: anywhere;
+    font-size: small;
 }

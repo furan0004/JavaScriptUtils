@@ -48,6 +48,31 @@
             "url": "https://twitter.com/kuron_nano",
             "title": "Twitter 2",
             "description": "My secondary account. It is everyday active."
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://pages.kurosaki.love/res/images/youtube_dark.svg",
+            "url": "https://www.youtube.com/channel/UCArGke6099LSxDdHbzJOFnQ",
+            "title": "YouTube 1",
+            "description": "あいうえお"
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://pages.kurosaki.love/res/images/youtube_dark.svg",
+            "url": "https://www.youtube.com/channel/UCrjrRi8XRbQ03j_YlvVVKmA",
+            "title": "YouTube 2",
+            "description": "かきくけこ"
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://pages.kurosaki.love/res/images/youtube_dark.svg",
+            "url": "https://www.youtube.com/channel/UCgyLVdYI2SwbLU4epVR_vCw",
+            "title": "YouTube 3",
+            "description": "さしすせそ"
         }
+
     ]
 }
