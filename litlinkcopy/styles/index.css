@@ -58,8 +58,8 @@ body{
 }
 
 .profile-socials{
-    width: auto;
-    height: 32px;
+    width: fit-content;
+    height: 64px;
     display: flex;
     margin: auto;
 }
