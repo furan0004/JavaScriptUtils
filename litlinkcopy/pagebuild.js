@@ -53,7 +53,7 @@ var profile = {
 
     profile.tagShow = document.createElement("div");
     profile.tagShow.classList.add("profile-tag-show");
-    profile.innerText = pageData.tags.join(" / ");
+    profile.innerText = [].concat(pageData.tags).join(" / ");
 
     profile.socials = document.createElement("div");
     profile.socials.classList.add("profile-socials");
@@ -61,6 +61,7 @@ var profile = {
     let keys = Object.keys(pageData.social);
     for(let i = 0; i < keys.length; i++){
         let anchor = document.createElement("a");
+        anchor.classList.add("profile-social-icon");
         anchor.href = pageData.social[keys[i]];
         
         let img = document.createElement("img");

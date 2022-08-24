@@ -64,13 +64,19 @@ body{
     margin: auto;
 }
 
-.profile-social-icon{
+.profile-social-icon-anchor{
     width: auto;
     height: auto;
     aspect-ratio: 1;
 
-    margin: 4px;
+    margin: 4px auto;;
 }
+
+.profile-social-icon{
+    height: 100%;
+}
+
+
 
 .profile-description{
     text-align: center;
