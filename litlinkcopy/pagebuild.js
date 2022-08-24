@@ -57,16 +57,17 @@ var profile = {
 
     profile.socials = document.createElement("div");
     profile.socials.classList.add("profile-socials");
-    console.log(pageData.social);
-    for(key in pageData.social){
+    
+    let keys = Object.keys(pageData.social);
+    for(let i = 0; i < keys.length; i++){
         let anchor = document.createElement("a");
-        anchor.href = pageData.social[key];
+        anchor.href = pageData.social[keys[i]];
         
         let img = document.createElement("img");
         img.src = {
             "twitter": "https://res/images/twitter.svg",
             "youtube": "https://res/images/youtube.svg",
-        }[key];
+        }[keys[i]];
 
         anchor.appendChild(img);
         profile.socials.appendChild(anchor);
