@@ -53,6 +53,7 @@ var profile = {
 
     profile.tagShow = document.createElement("div");
     profile.tagShow.classList.add("profile-tag-show");
+    console.log(typeof pageData.tags, pageData.tags);
     profile.innerText = Array.prototype.concat(new Array(), pageData.tags).join(" / ");
 
     profile.socials = document.createElement("div");
