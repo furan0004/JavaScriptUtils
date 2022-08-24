@@ -25,8 +25,16 @@ var profile = {
 
 
 (function(){
+
+    
     document.title = pageData.title || `${pageData.name}のプロフィール`;
     document.body.style.background = pageData.background;
+
+
+    //
+    line.appendChild(profile.icon);
+    line.appendChild(profile.name);
+
 
     //top
     profile.icon = document.createElement("img");
@@ -36,10 +44,6 @@ var profile = {
     profile.name = document.createElement("div");
     profile.name.classList.add("profile-name");
     profile.name.innerText = pageData.name;
-
-
-    line.appendChild(profile.icon);
-    line.appendChild(profile.name)
 
     //main stream
     line = document.createElement("div");
