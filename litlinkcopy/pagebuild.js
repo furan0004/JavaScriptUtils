@@ -33,7 +33,6 @@ var profile = {
     let iconLink = document.createElement("link");
     iconLink.rel = "icon";
     iconLink.href = pageData.appearance.icon;
-    
 
     //
     line = document.createElement("div");
@@ -56,7 +55,6 @@ var profile = {
 
     profile.tagShow = document.createElement("div");
     profile.tagShow.classList.add("profile-tag-show");
-    console.log(typeof pageData.tags, pageData.tags);
     profile.tagShow.innerText = pageData.tags.join(" / ");
 
     profile.socials = document.createElement("div");
@@ -113,6 +111,7 @@ function createItem(info){
     let item = document.createElement("div");
     item.classList.add("pane");
 
+    console.log(info);
     switch(info.type){
         case "simple-row":
             {
@@ -159,7 +158,7 @@ function createItem(info){
         case "dynamic-pane":
             {
                 item.classList.add("dynamic-pane");
-                item.style.background = (info.background.substring(o, 1) == "#") ? info.background : `url("${info.background}"}`;
+                item.style.background = (info.background.substring(0, 1) == "#") ? info.background : `url("${info.background}"}`;
 
                 let anchor = document.createElement("a");
                 anchor.href = info.url;
