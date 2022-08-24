@@ -1,0 +1,33 @@
+{
+    "name": "くろん",
+    "icon": "./icon.png",
+    "description": "くろんです",
+    "background": "yellow",
+    
+    "social": {
+        "twitter": "https://twitter.com/kuron_nano",
+        "youtube": "https://www.youtube.com/channel/UCArGke6099LSxDdHbzJOFnQ"
+    },
+
+    
+    "items":[
+        {
+            "type": "simple-row",
+            "icon": "./icon.png",
+            "title": "Twitter",
+            "description": "これはTwitter"
+        },
+
+        {
+            "type": "dynamic-pane",
+            "background:": "background.png",
+            "description": "Dynamicです"
+        },
+
+        {
+            "type": "string-pane",
+            "title": "String",
+            "description": "string pane. \n description..."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+[
+    {
+        "name": "simple-row",
+        "path": "/litlinkcopy/styles/simple_row.css"
+    },
+
+    {
+        "name": "dynamic-pane",
+        "path": "/litlinkcopy/styles/dynamic_pane.css"
+    },
+
+    {
+        "name": "string-pane",
+        "path": "/litlinkcopy/styles/string_pane.css"
+    }
+]
