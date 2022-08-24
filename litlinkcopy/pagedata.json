@@ -3,7 +3,7 @@
     "name": "くろん",
     "icon": "./icon.png",
     "description": "くろんです",
-    "background": "yellow",
+    "background": "#FFFF80",
     
     "social": {
         "twitter": "https://twitter.com/kuron_nano",

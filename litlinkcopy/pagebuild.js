@@ -17,12 +17,37 @@ document.adoptedStyleSheets.push(indexStyle);
 //define elements
 var line;
 
+var profile = {
+    icon: null,
+    name: null,
+    description: null,
+};
+
+
 (function(){
     document.title = pageData.title || `${pageData.name}のプロフィール`;
+    document.body.style.background = pageData.background;
 
+    //top
+    profile.icon = document.createElement("img");
+    profile.icon.classList.add("profile-icon");
+    profile.icon.src = pageData.icon;
+
+    profile.name = document.createElement("div");
+    profile.name.classList.add("profile-name");
+    profile.name.innerText = pageData.name;
+
+
+    line.appendChild(profile.icon);
+    line.appendChild(profile.name)
+
+    //main stream
     line = document.createElement("div");
     line.id = "line";
 
+    for(let i = 0; i < pageData.items.length; i++){
+        let item = createItem(pageData.items[i]);
+    }
 
     document.body.appendChild(line);
 })();
@@ -31,5 +56,13 @@ var line;
 async function importItemmStyles(){
     for(let i = 0; i < itemList.length; i++){
         
+    }
+}
+
+function createItem(info){
+    let result;
+
+    switch(info.type){
+
     }
 }
