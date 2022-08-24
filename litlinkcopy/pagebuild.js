@@ -3,7 +3,7 @@ import itemList from "./styles/master.json" assert {type: "json"};
 
 
 (function(){
-    importItemmStyles();
+    a();
 
 
 })();
@@ -16,5 +16,12 @@ async function importItemmStyles(){
         }).catch(err => {
             console.log(err.message);
         });
+    }
+}
+
+function a(){
+    for(let i = 0; i < itemList.length; i++){
+        let style = import(itemList[i].path, {assert: {type: "css"}});
+        document.adoptedStyleSheets.push(style);
     }
 }
