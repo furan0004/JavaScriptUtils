@@ -59,13 +59,13 @@ var profile = {
     profile.socials.classList.add("profile-socials");
     for(key in pageData.social){
         let anchor = document.createElement("a");
-        anchor.href = pageData.key;
+        anchor.href = pageData[key];
         
         let img = document.createElement("img");
         img.src = {
             "twitter": "https://res/images/twitter.svg",
             "youtube": "https://res/images/youtube.svg",
-        }.key;
+        }[key];
 
         anchor.appendChild(img);
         profile.socials.appendChild(anchor);
