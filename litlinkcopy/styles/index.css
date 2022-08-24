@@ -4,6 +4,10 @@ body{
     background-color: lime;
 }
 
+a{
+    text-decoration: none;
+}
+
 #line{
     width: 480px;
     min-height: 100%;
