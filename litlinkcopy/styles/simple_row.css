@@ -1,0 +1,16 @@
+.simple-row{
+    height: 88px;
+}
+
+.simple-row-body{
+    width: 100%;
+    height: 64px;
+}
+
+.simple-row-icon{
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1;
+
+    border-radius: 8px;
+}

@@ -23,6 +23,7 @@
         {
             "type": "simple-row",
             "icon": "./icon.png",
+            "url": "https://twitter.com/kuron_nano",
             "title": "Twitter",
             "description": "これはTwitter"
         },

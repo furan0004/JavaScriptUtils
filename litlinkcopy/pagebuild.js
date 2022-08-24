@@ -92,6 +92,7 @@ var profile = {
     //main stream
     for(let i = 0; i < pageData.items.length; i++){
         let item = createItem(pageData.items[i]);
+        line.appendChild(item);
     }
 
     document.body.appendChild(line);
@@ -110,8 +111,22 @@ function createItem(info){
 
     switch(info.type){
         case "simple-row":
+            item.classList.add("simple-row");
 
+            let anchor = document.createElement("a");
+            anchor.href = info.url;
 
+            let body = document.createElement("div");
+            
+            let icon = document.createElement("img");
+            icon.classList.add("simple-row-icon");
+            icon.src = info.icon;
+
+            anchor.appendChild(item);
+            item.appendChild(body);
+            body.appendChild(icon);
+
+            return anchor;
             break;
     }
 
