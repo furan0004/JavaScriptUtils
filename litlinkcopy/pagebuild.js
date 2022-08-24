@@ -83,6 +83,7 @@ var profile = {
     line.appendChild(iconHolder);
     line.appendChild(profile.name);
     line.appendChild(profile.tagShow);
+    line.appendChild(profile.socials);
     line.appendChild(profile.description);
 
     //main stream
