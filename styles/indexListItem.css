@@ -16,7 +16,7 @@
     display: flex;
     margin: 2px auto;
 
-    background: lightgrey;
+    background: #FFFFFF;
 }
 
 .index-item-body{
@@ -24,14 +24,14 @@
     width: calc(100% - 16px);
     height: 64px;
     margin: auto;
-
-    background: #FFFFFF;
 }
 
 .index-item-icon{
     width: auto;
     height: 100%;
     aspect-ratio: 1;
+
+    border-radius: 10%;
 }
 
 .index-item-text-rows{
@@ -49,9 +49,11 @@
 
 .index-item-title{
     margin: auto 2px;
+
     font-size: large;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #404040;
 }
 
 .index-item-title:hover{
@@ -60,9 +62,10 @@
 
 .index-item-text{
     height: 100%;
-
     margin: auto 4px;
+
     font-size: x-small;
+    color: #404040;
 
     overflow-y: hidden;
     overflow-wrap: anywhere;
