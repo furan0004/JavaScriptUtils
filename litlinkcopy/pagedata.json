@@ -32,6 +32,7 @@
             "type": "dynamic-pane",
             "icon": "./icon.png",
             "background": "./background.jpg",
+            "url": "https://kurosaki.love",
             "title": "title",
             "message": "ここにMessageが入ります",
             "description": "Dynamicです"
