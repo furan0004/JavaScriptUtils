@@ -1,0 +1,53 @@
+{
+    "title": "くろんのLink",
+    "name": "黒咲 くろん",
+    "description": "毎日Twitterをします。",
+    "tags": [
+        "ツイ廃",
+        "NEET",
+        "金欠"
+    ],
+
+    "appearance": {
+        "icon": "/res/images/icon.png",
+        "background": "#FFA0A0"
+    },
+
+    "social": {
+        "twitter": "https://twitter.com/kuron_nano"
+    },
+
+    "items": [
+        {
+            "type": "dynamic-pane",
+            "icon": "/res/images/icon.png",
+            "background": "#000000",
+            "url": "https://kurosaki.love",
+            "title": "blog",
+            "message": "ブログ作ったんだから！",
+            "description": "まだ記事は少ないよ。これから増える。"
+        },
+
+        {
+            "type": "string-pane",
+            "title": "litlinkを再現してみた。",
+            "description": "かのサイトを元に、できるだけ見たまま再現した。\n ちょっと面倒な部分は省略したりもしたけど、見た感じほぼ再現できてるでしょ。"
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://pbs.twimg.com/profile_images/1461984446127620099/2GrqJVjA_400x400.jpg",
+            "url": "https://twitter.com/KuronKurosaki",
+            "title": "Twitter 1",
+            "description": "My main account."
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://pbs.twimg.com/profile_images/1405334213654614017/zlnYftwi_400x400.jpg",
+            "url": "https://twitter.com/kuron_nano",
+            "title": "Twitter 2",
+            "description": "My secondary account. It is everyday active."
+        }
+    ]
+}

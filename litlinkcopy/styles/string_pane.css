@@ -11,5 +11,5 @@
 }
 
 .string-pane-description{
-    
+    overflow-wrap: anywhere;
 }

@@ -1,0 +1,46 @@
+{
+    "title": "Title",
+    "name": "Name",
+    "description": "Description",
+    "tags": [
+        "Tag 1",
+        "Tag 2"
+    ],
+
+    "appearance": {
+        "icon": "./icon.png",
+        "background": "yellow"
+    },
+    
+    "social": {
+        "twitter": "https://twitter.com/twitter",
+        "youtube": "https://www.youtube.com/channel/channnelid"
+    },
+
+    
+    "items":[
+        {
+            "type": "simple-row",
+            "icon": "./icon.png",
+            "url": "https://twitter.com/twitter",
+            "title": "Twitter",
+            "description": "This is my twitter account."
+        },
+
+        {
+            "type": "dynamic-pane",
+            "icon": "./icon.png",
+            "background": "./background.png",
+            "url": "https://yourdomain.xyz",
+            "title": "Title",
+            "message": "Message",
+            "description": "Description"
+        },
+
+        {
+            "type": "string-pane",
+            "title": "Title",
+            "description": "Description"
+        }
+    ]
+}

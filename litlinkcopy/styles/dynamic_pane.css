@@ -71,4 +71,6 @@
     margin: auto;
 
     color: #FFFFFF;
+    overflow-wrap: anywhere;
+    overflow-y: hidden;
 }

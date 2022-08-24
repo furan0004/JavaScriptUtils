@@ -1,4 +1,4 @@
-import pageData from "./pagedata.json" assert {type: "json"};
+
 import itemList from "./styles/master.json" assert {type: "json"};
 
 //import css
@@ -25,14 +25,13 @@ var profile = {
     description: null,
 };
 
-
-(function(){
-    document.title = pageData.title || `${pageData.name}のプロフィール`;
-    document.body.style.background = pageData.appearance.background;
+export function buildPage(pagedata){
+    document.title = pagedata.title || `${pagedata.name}のプロフィール`;
+    document.body.style.background = pagedata.appearance.background;
 
     let iconLink = document.createElement("link");
     iconLink.rel = "icon";
-    iconLink.href = pageData.appearance.icon;
+    iconLink.href = pagedata.appearance.icon;
 
     //
     line = document.createElement("div");
@@ -47,25 +46,25 @@ var profile = {
 
     profile.icon = document.createElement("img");
     profile.icon.classList.add("profile-icon");
-    profile.icon.src = pageData.appearance.icon;
+    profile.icon.src = pagedata.appearance.icon;
 
     profile.name = document.createElement("div");
     profile.name.classList.add("profile-name");
     profile.name.classList.add("profile-name");
-    profile.name.innerText = pageData.name;
+    profile.name.innerText = pagedata.name;
 
     profile.tagShow = document.createElement("div");
     profile.tagShow.classList.add("profile-tag-show");
-    profile.tagShow.innerText = pageData.tags.join(" / ");
+    profile.tagShow.innerText = pagedata.tags.join(" / ");
 
     profile.socials = document.createElement("div");
     profile.socials.classList.add("profile-socials");
     
-    let keys = Object.keys(pageData.social);
+    let keys = Object.keys(pagedata.social);
     for(let i = 0; i < keys.length; i++){
         let anchor = document.createElement("a");
         anchor.classList.add("profile-social-icon-anchor");
-        anchor.href = pageData.social[keys[i]];
+        anchor.href = pagedata.social[keys[i]];
         
         let img = document.createElement("img");
         img.classList.add("profile-social-icon");
@@ -81,7 +80,7 @@ var profile = {
 
     profile.description = document.createElement("div");
     profile.description.classList.add("profile-description");
-    profile.description.innerText = `Description\n${pageData.description}`;
+    profile.description.innerText = `Description\n${pagedata.description}`;
 
 
     line.appendChild(profileHolder);
@@ -93,19 +92,12 @@ var profile = {
     profileHolder.appendChild(profile.description);
 
     //main stream
-    for(let i = 0; i < pageData.items.length; i++){
-        let item = createItem(pageData.items[i]);
+    for(let i = 0; i < pagedata.items.length; i++){
+        let item = createItem(pagedata.items[i]);
         line.appendChild(item);
     }
 
     document.body.appendChild(line);
-})();
-
-
-async function importItemmStyles(){
-    for(let i = 0; i < itemList.length; i++){
-        
-    }
 }
 
 function createItem(info){
