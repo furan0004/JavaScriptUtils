@@ -3,7 +3,7 @@ import itemList from "./styles/master.json" assert {type: "json"};
 
 
 (function(){
-    a();
+    importItemmStyles();
 
 
 })();
@@ -12,16 +12,9 @@ import itemList from "./styles/master.json" assert {type: "json"};
 async function importItemmStyles(){
     for(let i = 0; i < itemList.length; i++){
         let style = await import(itemList[i].path, {assert: {type: "css"}}).then(module => {
-            document.adoptedStyleSheets.push(style);
+            document.adoptedStyleSheets.push(module);
         }).catch(err => {
             console.log(err.message);
         });
-    }
-}
-
-function a(){
-    for(let i = 0; i < itemList.length; i++){
-        let style = import(itemList[i].path, {assert: {type: "css"}});
-        document.adoptedStyleSheets.push(style);
     }
 }
