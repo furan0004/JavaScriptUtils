@@ -6,6 +6,7 @@
 
 .string-pane-title{
     font-size: larger;
+    font-weight: 400;
     text-decoration: underline;
 }
 

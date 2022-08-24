@@ -50,6 +50,10 @@
 
 .dynamic-pane-message-row{
     display: flex;
+    margin: 8px auto;
+
+    font-weight: 500;
+    font-size: large;
 }
 
 .dynamic-pane-message{
@@ -60,6 +64,7 @@
 
 .dynamic-pane-description-row{
     display: flex;
+    margin: 8px auto;
 }
 
 .dynamic-pane-description{
