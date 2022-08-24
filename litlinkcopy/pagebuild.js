@@ -45,7 +45,7 @@ var profile = {
     profile.name.classList.add("profile-name");
     profile.name.innerText = pageData.name;
 
-    profile.tagShow = document.createElement(div);
+    profile.tagShow = document.createElement("div");
     profile.tagShow.classList.add("profile-tag-show");
     profile.innerText = pageData.tags.join(" / ");
 
