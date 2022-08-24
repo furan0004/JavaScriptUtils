@@ -17,5 +17,8 @@ body{
 }
 
 #line > div{
-    
+    padding: 12px;
+
+    background: #FFFFFF;
+    border-radius: 24px;
 }
