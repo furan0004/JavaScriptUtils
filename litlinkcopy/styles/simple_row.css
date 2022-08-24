@@ -26,14 +26,16 @@
 
 .simple-row-text-row{
     height: 50%;
+    display: flex;
 }
 
 .simple-row-title{
     width: auto;
     height: auto;
-    margin: auto 4px;
+    margin: auto 8px;
 
     font-weight: bold;
+    font-size: larger;
 }
 
 .simple-row-title:hover{
@@ -43,7 +45,7 @@
 .simple-row-description{
     width: auto;
     height: auto;
-    margin: auto 4px;
+    margin: auto 8px;
 
     font-size: x-small;
 

@@ -30,7 +30,8 @@
 
         {
             "type": "dynamic-pane",
-            "background:": "background.png",
+            "icon": "./icon.png",
+            "background:": "./background.jpg",
             "description": "Dynamicです"
         },
 

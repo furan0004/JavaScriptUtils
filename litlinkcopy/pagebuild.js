@@ -115,43 +115,60 @@ function createItem(info){
 
     switch(info.type){
         case "simple-row":
-            item.classList.add("simple-row");
+            {
+                item.classList.add("simple-row");
 
-            let anchor = document.createElement("a");
-            anchor.href = info.url;
+                let anchor = document.createElement("a");
+                anchor.href = info.url;
 
-            let body = document.createElement("div");
-            body.classList.add("simple-row-body");
-            
-            let icon = document.createElement("img");
-            icon.classList.add("simple-row-icon");
-            icon.src = info.icon;
+                let body = document.createElement("div");
+                body.classList.add("simple-row-body");
+                
+                let icon = document.createElement("img");
+                icon.classList.add("simple-row-icon");
+                icon.src = info.icon;
 
-            let textRowHolder = document.createElement("div");
-            textRowHolder.classList.add("simple-row-text-row-holder");
+                let textRowHolder = document.createElement("div");
+                textRowHolder.classList.add("simple-row-text-row-holder");
 
-            let textRows = [document.createElement("div"), document.createElement("div")];
-            textRows[0].classList.add("simple-row-text-row");
-            textRows[1].classList.add("simple-row-text-row");
+                let textRows = [document.createElement("div"), document.createElement("div")];
+                textRows[0].classList.add("simple-row-text-row");
+                textRows[1].classList.add("simple-row-text-row");
 
-            let title = document.createElement("span");
-            title.classList.add("simple-row-title");
-            title.innerText = info.title;
+                let title = document.createElement("span");
+                title.classList.add("simple-row-title");
+                title.innerText = info.title;
 
-            let description = document.createElement("span");
-            description.classList.add("simple-row-description");
-            description.innerText = info.description;
+                let description = document.createElement("span");
+                description.classList.add("simple-row-description");
+                description.innerText = info.description;
 
-            anchor.appendChild(item);
-            item.appendChild(body);
-            body.appendChild(icon);
-            body.appendChild(textRowHolder);
-            textRowHolder.appendChild(textRows[0]);
-            textRowHolder.appendChild(textRows[1]);
-            textRows[0].appendChild(title);
-            textRows[1].appendChild(description);
+                anchor.appendChild(item);
+                item.appendChild(body);
+                body.appendChild(icon);
+                body.appendChild(textRowHolder);
+                textRowHolder.appendChild(textRows[0]);
+                textRowHolder.appendChild(textRows[1]);
+                textRows[0].appendChild(title);
+                textRows[1].appendChild(description);
 
-            return anchor;
+                return anchor;
+            }
+            break;
+
+        case "dynamic-pane":
+            {
+                item.classList.add("dynamic-pane");
+                item.style.background = info.background;
+
+                let anchor = document.createElement("a");
+                anchor.href = info.url;
+
+
+                anchor.appendChild(item);
+
+                return anchor;
+            }
             break;
     }
 
