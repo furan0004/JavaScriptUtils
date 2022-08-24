@@ -80,7 +80,7 @@ export function buildPage(pagedata){
 
     profile.description = document.createElement("div");
     profile.description.classList.add("profile-description");
-    profile.description.innerText = `Description\n${pagedata.description}`;
+    profile.description.innerText = pagedata.description;
 
 
     line.appendChild(profileHolder);
