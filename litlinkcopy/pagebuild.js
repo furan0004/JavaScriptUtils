@@ -61,10 +61,11 @@ var profile = {
     let keys = Object.keys(pageData.social);
     for(let i = 0; i < keys.length; i++){
         let anchor = document.createElement("a");
-        anchor.classList.add("profile-social-icon");
+        anchor.classList.add("profile-social-icon-anchor");
         anchor.href = pageData.social[keys[i]];
         
         let img = document.createElement("img");
+        img.classList.add("profile-social-icon");
         img.src = {
             "twitter": "https://pages.kurosaki.love/res/images/twitter.svg",
             "youtube": "https://pages.kurosaki.love/res/images/youtube.svg",
