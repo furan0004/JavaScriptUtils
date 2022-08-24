@@ -14,9 +14,14 @@ document.adoptedStyleSheets.push(itemStyle_2);
 import indexStyle from "/litlinkcopy/styles/index.css" assert {type: "css"};
 document.adoptedStyleSheets.push(indexStyle);
 
+//define elements
+var line;
 
 (function(){
     document.title = pageData.title || `${pageData.name}のプロフィール`;
+
+    line = document.createElement("div");
+    line.id = "line";
 
 })();
 
