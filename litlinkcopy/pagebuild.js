@@ -55,7 +55,7 @@ var profile = {
 
 
     iconHolder.appendChild(profile.icon);
-    line.appendChild(profile.icon);
+    line.appendChild(iconHolder);
     line.appendChild(profile.name);
     line.appendChild(profile.description);
 
