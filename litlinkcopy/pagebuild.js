@@ -12,7 +12,7 @@ async function importItemmStyles(){
     for(let i = 0; i < itemList.length; i++){
         let style = getStyle(itemList[i].path);
         console.log(style);
-        document.adoptedStyleSheets.push(style);
+        document.adoptedStyleSheets.push(style.default);
     }
 }
 
