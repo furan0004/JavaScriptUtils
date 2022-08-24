@@ -164,6 +164,9 @@ function createItem(info){
                 let anchor = document.createElement("a");
                 anchor.href = info.url;
 
+                let cover = document.createElement("div");
+                cover.classList.add("dynamic-pane-cover");
+
                 let titleRow = document.createElement("div");
                 titleRow.classList.add("dynamic-pane-title-row");
 
@@ -196,11 +199,12 @@ function createItem(info){
                 description.innerText = info.description;
 
                 anchor.appendChild(item);
-                item.appendChild(titleRow);
+                item.appendChild(cover);
+                cover.appendChild(titleRow);
                 titleRow.appendChild(title);
-                item.appendChild(mainPane);
+                cover.appendChild(mainPane);
                 mainPane.appendChild(iconRow);
-                messageRow.appendChild(icon);
+                iconRow.appendChild(icon);
                 mainPane.appendChild(messageRow);
                 messageRow.appendChild(message);
                 mainPane.appendChild(descriptionRow);
