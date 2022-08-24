@@ -20,13 +20,14 @@ var line;
 var profile = {
     icon: null,
     name: null,
+    tagShow: null,
     description: null,
 };
 
 
 (function(){
     document.title = pageData.title || `${pageData.name}のプロフィール`;
-    document.body.style.background = pageData.background;
+    document.body.style.background = pageData.appearance.background;
 
     //
     line = document.createElement("div");
@@ -38,11 +39,15 @@ var profile = {
 
     profile.icon = document.createElement("img");
     profile.icon.classList.add("profile-icon");
-    profile.icon.src = pageData.icon;
+    profile.icon.src = pageData.appearance.icon;
 
     profile.name = document.createElement("div");
     profile.name.classList.add("profile-name");
     profile.name.innerText = pageData.name;
+
+    profile.tagShow = document.createElement(div);
+    profile.tagShow.classList.add("profile-tag-show");
+    profile.innerText = pageData.tags.join(" / ");
 
     profile.description = document.createElement("div");
     profile.description.classList.add("profile-description");
@@ -52,6 +57,7 @@ var profile = {
     iconHolder.appendChild(profile.icon);
     line.appendChild(profile.icon);
     line.appendChild(profile.name);
+    line.appendChild(profile.description);
 
     //main stream
     for(let i = 0; i < pageData.items.length; i++){

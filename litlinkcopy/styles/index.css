@@ -51,3 +51,12 @@ body{
 
     background: transparent;
 }
+
+.profile-tag-show{
+    text-align: center;
+}
+
+.profile-description{
+    text-align: center;
+    background: transparent;
+}

@@ -1,9 +1,17 @@
 {
     "title": null,
     "name": "くろん",
-    "icon": "./icon.png",
     "description": "くろんです。",
-    "background": "#FFFF80",
+    "tags": [
+        "Stupid",
+        "Idiot",
+        "Noob"
+    ],
+
+    "appearance": {
+        "icon": "./icon.png",
+        "background": "#FFFF80"
+    },
     
     "social": {
         "twitter": "https://twitter.com/kuron_nano",
