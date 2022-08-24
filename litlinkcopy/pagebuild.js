@@ -25,16 +25,12 @@ var profile = {
 
 
 (function(){
-
-    
     document.title = pageData.title || `${pageData.name}のプロフィール`;
     document.body.style.background = pageData.background;
 
-
     //
-    line.appendChild(profile.icon);
-    line.appendChild(profile.name);
-
+    line = document.createElement("div");
+    line.id = "line";
 
     //top
     profile.icon = document.createElement("img");
@@ -45,10 +41,11 @@ var profile = {
     profile.name.classList.add("profile-name");
     profile.name.innerText = pageData.name;
 
-    //main stream
-    line = document.createElement("div");
-    line.id = "line";
 
+    line.appendChild(profile.icon);
+    line.appendChild(profile.name);
+
+    //main stream
     for(let i = 0; i < pageData.items.length; i++){
         let item = createItem(pageData.items[i]);
     }
