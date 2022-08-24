@@ -117,6 +117,7 @@ function createItem(info){
             anchor.href = info.url;
 
             let body = document.createElement("div");
+            body.classList.add("simple-row-body");
             
             let icon = document.createElement("img");
             icon.classList.add("simple-row-icon");
