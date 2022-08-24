@@ -156,7 +156,7 @@ function createItem(info){
                 item.style.background = (info.background.substring(0, 1) == "#") ? info.background : `url(${info.background})`;
                 item.style.backgroundSize = "cover";
                 item.style.backgroundPosition = "center";
-                item.style.width = "100%";
+                item.style.width = "calc(100% - 24px)";
                 item.style.padding = "0";
 
                 let anchor = document.createElement("a");

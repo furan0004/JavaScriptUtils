@@ -7,8 +7,8 @@
 }
 
 .dynamic-pane-cover{
-    width: calc(100% - 24px);
-    height: calc(100% - 24px);
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
     padding: 12px;
 
     background: #00000040;
