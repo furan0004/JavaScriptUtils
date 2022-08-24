@@ -51,6 +51,7 @@ var profile = {
 
     profile.name = document.createElement("div");
     profile.name.classList.add("profile-name");
+    profile.name.classList.add("profile-name");
     profile.name.innerText = pageData.name;
 
     profile.tagShow = document.createElement("div");
@@ -135,10 +136,12 @@ function createItem(info){
                 textRows[1].classList.add("simple-row-text-row");
 
                 let title = document.createElement("span");
+                title.classList.add("def-font");
                 title.classList.add("simple-row-title");
                 title.innerText = info.title;
 
                 let description = document.createElement("span");
+                description.classList.add("def-font");
                 description.classList.add("simple-row-description");
                 description.innerText = info.description;
 

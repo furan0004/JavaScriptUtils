@@ -14,7 +14,7 @@ a{
     margin: auto;
 }
 
-#line *{
+#line .def-font, #line > *{
     color: #808080;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
