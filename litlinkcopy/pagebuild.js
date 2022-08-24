@@ -30,6 +30,11 @@ var profile = {
     document.title = pageData.title || `${pageData.name}のプロフィール`;
     document.body.style.background = pageData.appearance.background;
 
+    let iconLink = document.createElement("link");
+    iconLink.rel = "icon";
+    iconLink.href = pageData.appearance.icon;
+    
+
     //
     line = document.createElement("div");
     line.id = "line";
