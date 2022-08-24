@@ -1,0 +1,13 @@
+.string-pane-title-row{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.string-pane-title{
+    font-size: larger;
+}
+
+.string-pane-description{
+    
+}

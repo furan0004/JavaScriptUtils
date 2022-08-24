@@ -218,6 +218,25 @@ function createItem(info){
                 return anchor;
             }
             break;
+
+        case "string-pane":
+            let titleRow = document.createElement("div");
+            titleRow.classList.add("string-pane-title-row");
+
+            let title = document.createElement("span");
+            title.classList.add("def-font");
+            title.classList.add("string-pane-title");
+            title.innerText = info.title;
+
+            let description = document.createElement("span");
+            description.classList.add("def-font");
+            description.classList.add("string-pane-description");
+
+            item.appendChild(title);
+            titleRow.appendChild(title);
+            item.appendChild(description);
+
+            break;
     }
 
     return item;
