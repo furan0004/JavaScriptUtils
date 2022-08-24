@@ -1,3 +1,58 @@
 .dynamic-pane{
     aspect-ratio: 16 / 9;
+
+    background-size: cover;
+}
+
+.dynamic-pane-title-row{
+    width: 100%;
+    height: auto;
+}
+
+.dynamic-pane-title{
+    width: auto;
+    height: 100%;
+    padding: 0 16px;
+
+    text-align: center;
+    border-radius: 16px;
+    background: #FFFFFF;
+}
+
+.dynamic-pane-main{
+
+}
+
+.dynamic-pane-icon-row{
+    display: flex;
+}
+
+.dynamic-pane-icon{
+    width: auto;
+    height: 10%;
+    aspect-ratio: 1;
+    margin: 16px auto;
+
+    border-radius: 100%;
+    border: #FFFFFF solid 1px;
+}
+
+.dynamic-pane-message-row{
+    display: flex;
+}
+
+.dynamic-pane-message{
+    margin: auto;
+
+    color: #FFFFFF;
+}
+
+.dynamic-pane-description-row{
+    display: flex;
+}
+
+.dynamic-pane-description{
+    margin: auto;
+
+    color: #FFFFFF;
 }

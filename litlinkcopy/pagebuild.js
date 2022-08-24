@@ -158,18 +158,50 @@ function createItem(info){
         case "dynamic-pane":
             {
                 item.classList.add("dynamic-pane");
-                item.style.background = (info.background.substring(0, 1) == "#") ? info.background : `url("${info.background}"}`;
+                item.style.background = (info.background.substring(0, 1) == "#") ? info.background : `url(${info.background}}`;
 
                 let anchor = document.createElement("a");
                 anchor.href = info.url;
 
                 let titleRow = document.createElement("div");
-                
+                titleRow.classList.add("dynamic-pane-title-row");
 
                 let title = document.createElement("span");
+                title.classList.add("dynamic-pane-title");
+                title.innerText = info.title;
 
+                let mainPane = document.createElement("div");
+                mainPane.classList.add("dynamic-pane-main");
+
+                let iconRow = document.createElement("div");
+                iconRow.classList.add("dynamic-pane-icon-row");
+
+                let icon = document.createElement("img");
+                icon.classList.add("dynamic-pane-icon");
+                icon.src = info.icon;
+
+                let messageRow = document.createElement("div");
+                messageRow.classList.add("dynamic-pane-message-row");
+
+                let message = document.createElement("span");
+                message.classList.add("dynamic-pane-message");
+                message.innerText = info.message;
+
+                let descriptionRow = document.createElement("div");
+                descriptionRow.classList.add("dynamic-pane-description-row");
+                
+                let description = document.createElement("span");
+                description.classList.add("dynamic-pane-description");
+                description.innerText = info,description;
 
                 anchor.appendChild(item);
+                item.appendChild(titleRow);
+                titleRow.appendChild(title);
+                item.appendChild(mainPane);
+                mainPane.appendChild(messageRow);
+                messageRow.appendChild(message);
+                mainPane.appendChild(descriptionRow);
+                descriptionRow.appendChild(description);
 
                 return anchor;
             }

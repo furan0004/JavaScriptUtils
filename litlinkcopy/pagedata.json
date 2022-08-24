@@ -32,6 +32,8 @@
             "type": "dynamic-pane",
             "icon": "./icon.png",
             "background": "./background.jpg",
+            "title": "title",
+            "message": "ここにMessageが入ります",
             "description": "Dynamicです"
         },
 
