@@ -59,7 +59,7 @@ var profile = {
     profile.socials.classList.add("profile-socials");
     for(key in pageData.social){
         let anchor = document.createElement("a");
-        anchor.href = pageData[key];
+        anchor.href = pageData.social[key];
         
         let img = document.createElement("img");
         img.src = {
