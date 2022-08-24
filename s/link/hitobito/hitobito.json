@@ -1,0 +1,119 @@
+{
+    "title": "ひとびとのLink",
+    "name": "ひとびと",
+    "description": "2002/09/18 - 19 \n イラストと映像で楽しめるものをつくりたい。",
+    "tags": [
+        "Illust",
+        "Movie"
+    ],
+
+    "appearance": {
+        "icon": "https://pbs.twimg.com/profile_images/1508527911917453312/6FJbpBRm_400x400.jpg",
+        "background": "yellow"
+    },
+    
+    "social": {
+        "twitter": "https://twitter.com/People_Hitobito",
+        "youtube": "https://www.youtube.com/c/hitobito-ht"
+    },
+
+    
+    "items":[
+        {
+            "type": "simple-row",
+            "icon": "/res/images/mark_face_laugh.png",
+            "url": "https://hit-bit.tumblr.com/",
+            "title": "ポートフォリオ",
+            "description": "制作実績・今までお手伝いさせて頂いたもの"
+        },
+
+        {
+            "type": "string-pane",
+            "title": "お問い合わせについて",
+            "description": "映像、イラスト、イラストMV、ロゴデザイン等 \n お力添えができそうなお話あれば是非お願い致します！ \n\n もちろんイラスト×映像、イラスト×デザインなど同時にご依頼頂いても大丈夫です。 \n\n ▶Twitter(@People_Hitobito)のDM \n\n ▶ hitobito.ht@gmail.com \n\n\n ※常時募集しております！3日以内には返信させて頂くと思いますが、反応なければお手数おかけしますがもう一度送って頂くか、TwitterのDMで送って頂ければ確実に反応できると思います。 \n\n ※納期や報酬等はご連絡の際にあらかじめご提示頂けますと大変助かります！"
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://pbs.twimg.com/profile_images/1508527911917453312/6FJbpBRm_400x400.jpg",
+            "url": "https://twitter.com/People_Hitobito",
+            "title": "Twitter(メイン)",
+            "description": "絵の事と仕事の事"
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "/res/images/pixiv_logo_icon.png",
+            "url": "https://www.pixiv.net/users/30436728",
+            "title": "Pixiv",
+            "description": "イラストをまとめてます"
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://prd.storage.lit.link/images/creator/ddbb4710-14a7-42a5-a858-c4f08fcfc3e6/e1a7e415-50d8-41cc-9e38-dfabb36e960c.png",
+            "url": "https://www.youtube.com/c/hitobito-ht",
+            "title": "YouTube",
+            "description": "動画まとめてます"
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://prd.storage.lit.link/images/creator/ddbb4710-14a7-42a5-a858-c4f08fcfc3e6/e15c5b6a-3b82-40ae-9b32-bace372f89f2.png",
+            "url": "https://www.nicovideo.jp/user/77003134",
+            "title": "niconicoo",
+            "description": ""
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "",
+            "url": "https://www.tiktok.com/@hitobito_ht?lang=ja-JP",
+            "title": "TikTok",
+            "description": ""
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://pbs.twimg.com/profile_images/1349385848760848384/lxqnU8IP_400x400.jpg",
+            "url": "https://twitter.com/Hitobito_sub",
+            "title": "Twitter(サブ)",
+            "description": "主ににじさんじの事をつぶやきます"
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://prd.storage.lit.link/images/creator/ddbb4710-14a7-42a5-a858-c4f08fcfc3e6/b4082971-59ef-49a0-9aad-d49395ba34f3.png",
+            "url": "https://marshmallow-qa.com/3bk_te_te?utm_medium=url_text&utm_source=promotion",
+            "title": "マシュマロ(tos)",
+            "description": "subにて返してます。返した名前の絵文字が変わる"
+        },
+
+        {
+            "type": "dynamic-pane",
+            "icon": "https://pbs.twimg.com/profile_images/1508527911917453312/6FJbpBRm_400x400.jpg",
+            "background": "https://pbs.twimg.com/profile_banners/953273804259655686/1659244715/1500x500",
+            "url": "https://skeb.jp/@People_Hitobito",
+            "title": "Skeb",
+            "message": "RECOMMENED PRICE 14,000JPY",
+            "description": "SKEB ARTWORK REQUEST BOX"
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://prd.storage.lit.link/images/creator/ddbb4710-14a7-42a5-a858-c4f08fcfc3e6/174a1119-5b88-464c-9bd7-6c736a4b414b.png",
+            "url": "https://hitobito-ht.booth.pm/",
+            "title": "booth",
+            "description": "二次創作で販売しているグッズなど"
+        },
+
+        {
+            "type": "simple-row",
+            "icon": "https://pbs.twimg.com/profile_images/1448492078699204612/bLpFtu2-_400x400.jpg",
+            "url": "https://twitter.com/WEKApeople_htbt",
+            "title": "3rd Twitter",
+            "description": "なんでも垢"
+        }
+        
+    ]
+}
