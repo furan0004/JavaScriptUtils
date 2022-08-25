@@ -180,7 +180,11 @@ function createItem(info){
 
                 let icon = document.createElement("img");
                 icon.classList.add("dynamic-pane-icon");
-                icon.src = info.icon;
+                if(info.icon != null){
+                    icon.src = info.icon;
+                }else{
+                    icon.style.visibility = "hidden";
+                }
 
                 let messageRow = document.createElement("div");
                 messageRow.classList.add("dynamic-pane-message-row");
@@ -236,6 +240,12 @@ function createItem(info){
         case "tile-pane":
             {
                 
+            }
+            break;
+
+        case "file-download":
+            {
+
             }
             break;
     }

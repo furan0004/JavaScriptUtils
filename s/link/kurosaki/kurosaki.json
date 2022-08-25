@@ -21,7 +21,7 @@
         {
             "type": "dynamic-pane",
             "icon": "/res/images/icon.png",
-            "background": "#000000",
+            "background": "/res/images/background.jpg",
             "url": "https://kurosaki.love",
             "title": "blog",
             "message": "ブログ作ったんだから！",
@@ -75,7 +75,7 @@
         },
 
         {
-            
+
         }
 
     ]
