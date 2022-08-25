@@ -257,7 +257,7 @@ function createItem(info){
                     tile.classList.add("tile-pane-item");
                     tile.style.width = `calc(${100 / hDiv}% - ${hMargin}px)`;
                     tile.style.height = `calc(${100 / vDiv}% - ${vMargin}px)`;
-                    tile.style.background = ["#800000", "#008000", "#000080", "#808000", "#800080", "#008080"][i % 6];
+                    tile.style.background = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF"][i % 6];
                     
                     tileHolder.appendChild(tile);
                 }
