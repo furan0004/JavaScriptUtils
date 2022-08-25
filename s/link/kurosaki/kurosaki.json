@@ -76,7 +76,7 @@
         },
 
         {
-            "type": "tile-pane",
+            "type": "grid-pane",
             "template": {
                 "rows": 4,
                 "columns": 4,
