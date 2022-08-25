@@ -94,7 +94,7 @@
                         "height": 1
                     },
 
-                    "colour": "#FF0000",
+                    "colour": "#FF8080",
                     "url": "https://link.htbt.art"
                 },
 
@@ -109,7 +109,7 @@
                         "height": 1
                     },
 
-                    "colour": "#00FF00"
+                    "colour": "#80FF80"
                 },
 
                 {
@@ -123,7 +123,7 @@
                         "height": 3
                     },
 
-                    "colour": "#0000FF"
+                    "colour": "#8080FF"
                 },
 
                 {
@@ -137,7 +137,7 @@
                         "height": 2
                     },
 
-                    "colour": "#00FFFF",
+                    "colour": "#80FFFF",
                     "url": "https://utils.kurosaki.love"
                 },
 
@@ -152,7 +152,7 @@
                         "height": 1
                     },
 
-                    "colour": "#FF00FF"
+                    "colour": "#FF80FF"
                 },
 
                 {
@@ -166,13 +166,15 @@
                         "height": 2
                     },
 
-                    "colour": "#FFFF00"
+                    "colour": "#FFFF80"
                 }
             ]
         },
 
         {
-            "type": "download-pane"
+            "type": "download-pane",
+            "filename": "heyheyhey.txt",
+            "url": "data, heyheyhey!!!!"
         }
 
     ]

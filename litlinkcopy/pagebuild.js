@@ -5,7 +5,7 @@ import itemList from "./master.json" assert {type: "json"};
 import itemStyle_0 from "/litlinkcopy/styles/simple_row.css" assert {type: "css"};
 import itemStyle_1 from "/litlinkcopy/styles/dynamic_pane.css" assert {type: "css"};
 import itemStyle_2 from "/litlinkcopy/styles/string_pane.css" assert {type: "css"};
-import itemStyle_3 from "/litlinkcopy/styles/tile-pane.css" assert {type: "css"};
+import itemStyle_3 from "/litlinkcopy/styles/grid-pane.css" assert {type: "css"};
 import itemStyle_4 from "/litlinkcopy/styles/download-pane.css" assert {type: "css"};
 
 document.adoptedStyleSheets.push(itemStyle_0);
@@ -244,15 +244,15 @@ function createItem(info){
             }
             break;
 
-        case "tile-pane":
+        case "grid-pane":
             {
                 let rows = info.template.rows, columns = info.template.columns;
 
-                let tileHolder = document.createElement("div");
-                tileHolder.classList.add("tile-pane");
-                tileHolder.style.aspectRatio = columns / rows;
-                tileHolder.style.gridTemplate = `${100 / rows}% / ${100 / columns}%`;
-                tileHolder.style.gap = `${info.template.gap}px`;
+                let grid = document.createElement("div");
+                grid.classList.add("tile-pane");
+                grid.style.aspectRatio = columns / rows;
+                grid.style.gridTemplate = `${100 / rows}% / ${100 / columns}%`;
+                grid.style.gap = `${info.template.gap}px`;
 
 
                 for(let i = 0; i < info.items.length; i++){
@@ -263,27 +263,24 @@ function createItem(info){
                         info.items[i].position.x + info.items[i].size.width
                     ];
                     
-                    let tile = document.createElement("div");
-                    tile.classList.add("tile-pane-item");
-                    tile.style.background = info.items[i].colour;
-                    tile.addEventListener("click", function(){
-                        console.log(dimension);
-                    });
+                    let cell = document.createElement("div");
+                    cell.classList.add("grid-pane-cell");
+                    cell.style.background = info.items[i].colour;
 
                     if(info.items[i].url != null){
                         let anchor = document.createElement("a");
                         anchor.href = info.items[i].url;
                         anchor.style.gridArea = dimension.join(" / ");
 
-                        anchor.appendChild(tile);
-                        tileHolder.appendChild(anchor);
+                        anchor.appendChild(cell);
+                        grid.appendChild(anchor);
                     }else{
                         tile.style.gridArea = dimension.join(" / ");
-                        tileHolder.appendChild(tile);
+                        grid.appendChild(cell);
                     }
                 }
 
-                item.appendChild(tileHolder);
+                item.appendChild(grid);
             }
             break;
 
@@ -292,9 +289,23 @@ function createItem(info){
                 let holder = document.createElement("div");
                 holder.classList.add("downlaod-pane");
 
+                let thumbnail = document.createElement("img");
+                thumbnail.classList.add("download-pane-thunbnail");
 
+                let detail = document.createElement("div");
+
+                let dlAnchor = document.createElement("a");
+                dlAnchor.href = encodeURI(info.url);
+                dlAnchor.download = info.filename;
+
+                let dlBtn = document.createElement("div");
+                dlBtn.innerText = "Download";
 
                 item.appendChild(holder);
+                holder.appendChild(thumbnail);
+                holder.appendChild(detail);
+                detail.appendChild(dlAnchor);
+                dlAnchor.appendChild(dlBtn);
             }
             break;
 
