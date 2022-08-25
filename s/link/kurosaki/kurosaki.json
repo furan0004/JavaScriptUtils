@@ -78,7 +78,7 @@
         {
             "type": "tile-pane",
             "template": {
-                "rows": 3,
+                "rows": 4,
                 "columns": 4
             },
             "items": [
@@ -94,6 +94,76 @@
                     },
 
                     "colour": "#FF0000"
+                },
+
+                {
+                    "position": {
+                        "x": 2,
+                        "y": 1
+                    },
+                    
+                    "size" : {
+                        "width": 2,
+                        "height": 1
+                    },
+
+                    "colour": "#00FF00"
+                },
+
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 2
+                    },
+                    
+                    "size" : {
+                        "width": 2,
+                        "height": 3
+                    },
+
+                    "colour": "#0000FF"
+                },
+
+                {
+                    "position": {
+                        "x": 4,
+                        "y": 1
+                    },
+                    
+                    "size" : {
+                        "width": 1,
+                        "height": 2
+                    },
+
+                    "colour": "#00FFFF"
+                },
+
+                {
+                    "position": {
+                        "x": 3,
+                        "y": 2
+                    },
+                    
+                    "size" : {
+                        "width": 1,
+                        "height": 1
+                    },
+
+                    "colour": "#FF00FF"
+                },
+
+                {
+                    "position": {
+                        "x": 3,
+                        "y": 3
+                    },
+                    
+                    "size" : {
+                        "width": 2,
+                        "height": 2
+                    },
+
+                    "colour": "#FFFF00"
                 }
             ]
         },

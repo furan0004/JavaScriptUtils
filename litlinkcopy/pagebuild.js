@@ -259,7 +259,7 @@ function createItem(info){
                     tile.classList.add("tile-pane-item");
                     tile.style.background = info.items[i].colour;
                     tile.style.gridArea = `${info.item[i].position.y} / ${info.item[i].position.x} / ${info.item[i].position.y + info.items[i].size.height} / ${info.item[i].position.x + info.items[i].size.width}`;
-                    
+
                     tileHolder.appendChild(tile);
                 }
 
