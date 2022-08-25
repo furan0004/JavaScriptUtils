@@ -32,6 +32,7 @@ export function buildPage(pagedata){
     let iconLink = document.createElement("link");
     iconLink.rel = "icon";
     iconLink.href = pagedata.appearance.icon;
+    document.head.appendChild(iconLink);
 
     //
     line = document.createElement("div");
@@ -248,6 +249,9 @@ function createItem(info){
 
             }
             break;
+
+        default:
+            return document.createElement("div");
     }
 
     return item;

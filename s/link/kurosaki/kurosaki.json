@@ -20,7 +20,7 @@
     "items": [
         {
             "type": "dynamic-pane",
-            "icon": "/res/images/icon.png",
+            "icon": null,
             "background": "/res/images/background.jpg",
             "url": "https://kurosaki.love",
             "title": "blog",
