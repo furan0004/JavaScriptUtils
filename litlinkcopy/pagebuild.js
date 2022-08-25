@@ -244,12 +244,13 @@ function createItem(info){
 
         case "tile-pane":
             {
-                let tileHolder = document.createElement("div");
-                tileHolder.classList.add("tile-pane");
-
-                let hDiv = 3, vDiv = 3;
+                let hDiv = 3, vDiv = 4;
                 let tileMargin = 4;
                 let hMargin = tileMargin * (hDiv + 1) / hDiv, vMargin = tileMargin * (vDiv + 1) / vDiv;
+
+                let tileHolder = document.createElement("div");
+                tileHolder.classList.add("tile-pane");
+                tileHolder.style.aspectRatio = hDiv / vDiv;                
 
                 for(let i = 0; i < hDiv*vDiv; i++){
                     let tile = document.createElement("div");
