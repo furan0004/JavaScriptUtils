@@ -256,9 +256,16 @@ function createItem(info){
 
 
                 for(let i = 0; i < rows * columns; i++){
+                    let pos = {
+                        x: i % columns,
+                        y: Math.floor(i / columns),
+                    };
+
                     let tile = document.createElement("div");
                     tile.classList.add("tile-pane-item");
                     tile.style.background = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF"][i % 6];
+                    tile.style.gridRow = pos.y;
+                    tile.style.gridColumn = pos.x;
                     
                     tileHolder.appendChild(tile);
                 }
