@@ -77,9 +77,24 @@
 
         {
             "type": "tile-pane",
-            "template": "",
+            "template": {
+                "rows": 3,
+                "columns": 4
+            },
             "items": [
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 1
+                    },
+                    
+                    "size" : {
+                        "width": 1,
+                        "height": 1
+                    },
 
+                    "colour": "#FF0000"
+                }
             ]
         },
 

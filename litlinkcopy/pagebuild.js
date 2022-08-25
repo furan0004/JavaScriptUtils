@@ -246,8 +246,7 @@ function createItem(info){
 
         case "tile-pane":
             {
-                let rows = 3, columns = 4;
-                let tileMargin = 4;
+                let rows = info.template.rows, columns = info.template.columns;
 
                 let tileHolder = document.createElement("div");
                 tileHolder.classList.add("tile-pane");
@@ -255,17 +254,11 @@ function createItem(info){
                 tileHolder.style.gridTemplate = `${100 / rows}% / ${100 / columns}%`;
 
 
-                for(let i = 0; i < rows * columns; i++){
-                    let pos = {
-                        x: i % columns + 1,
-                        y: Math.floor(i / columns) + 1,
-                    };
-
+                for(let i = 0; i < info.items.length; i++){
                     let tile = document.createElement("div");
                     tile.classList.add("tile-pane-item");
-                    tile.style.background = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF"][i % 6];
-                    tile.style.gridRow = pos.y;
-                    tile.style.gridColumn = pos.x;
+                    tile.style.background = info.items[i].colour;
+                    tile.style.gridArea = `${info.item[i].position.y} / ${info.item[i].position.x} / ${info.item[i].position.y + info.items[i].size.height} / ${info.item[i].position.x + info.items[i].size.width}`;
                     
                     tileHolder.appendChild(tile);
                 }
