@@ -7,8 +7,8 @@ a{
 }
 
 #line{
-    width: 480px;
-    max-width: 480px;
+    width: 472px;
+    max-width: 472px;
     min-height: 100%;
     margin: auto;
     padding: 0 4px;
@@ -94,6 +94,6 @@ a{
 
 @media screen and (max-width: 480px) {
     #line{
-        width: 96%;
+        width: calc(100% - 8px);
     }
 }
