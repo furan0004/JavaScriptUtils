@@ -275,7 +275,7 @@ function createItem(info){
                         anchor.appendChild(cell);
                         grid.appendChild(anchor);
                     }else{
-                        tile.style.gridArea = dimension.join(" / ");
+                        grid.style.gridArea = dimension.join(" / ");
                         grid.appendChild(cell);
                     }
                 }
