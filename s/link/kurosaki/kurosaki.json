@@ -77,9 +77,14 @@
 
         {
             "type": "tile-pane",
+            "template": "",
             "items": [
-                
+
             ]
+        },
+
+        {
+            "type": "download-pane"
         }
 
     ]

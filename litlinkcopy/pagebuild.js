@@ -6,11 +6,13 @@ import itemStyle_0 from "/litlinkcopy/styles/simple_row.css" assert {type: "css"
 import itemStyle_1 from "/litlinkcopy/styles/dynamic_pane.css" assert {type: "css"};
 import itemStyle_2 from "/litlinkcopy/styles/string_pane.css" assert {type: "css"};
 import itemStyle_3 from "/litlinkcopy/styles/tile-pane.css" assert {type: "css"};
+import itemStyle_4 from "/litlinkcopy/styles/download-pane.css" assert {type: "css"};
 
 document.adoptedStyleSheets.push(itemStyle_0);
 document.adoptedStyleSheets.push(itemStyle_1);
 document.adoptedStyleSheets.push(itemStyle_2);
 document.adoptedStyleSheets.push(itemStyle_3);
+document.adoptedStyleSheets.push(itemStyle_4);
 
 //import main css
 import indexStyle from "/litlinkcopy/styles/index.css" assert {type: "css"};
@@ -244,19 +246,19 @@ function createItem(info){
 
         case "tile-pane":
             {
-                let hDiv = 4, vDiv = 3;
+                let rows = 3, columns = 4;
                 let tileMargin = 4;
                 let hMargin = tileMargin * (hDiv + 1) / hDiv, vMargin = tileMargin * (vDiv + 1) / vDiv;
 
                 let tileHolder = document.createElement("div");
                 tileHolder.classList.add("tile-pane");
-                tileHolder.style.aspectRatio = hDiv / vDiv;                
+                tileHolder.style.aspectRatio = columns / rows;
+                tileHolder.style.gridTemplate = `${100 / rows}% / ${100 / columns}%`;
 
-                for(let i = 0; i < hDiv*vDiv; i++){
+
+                for(let i = 0; i < rows * columns; i++){
                     let tile = document.createElement("div");
                     tile.classList.add("tile-pane-item");
-                    tile.style.width = `calc(${100 / hDiv}% - ${hMargin}px)`;
-                    tile.style.height = `calc(${100 / vDiv}% - ${vMargin}px)`;
                     tile.style.background = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF"][i % 6];
                     
                     tileHolder.appendChild(tile);
@@ -268,7 +270,10 @@ function createItem(info){
 
         case "download-pane":
             {
-                
+                let holder = document.createElement("div");
+                holder.classList.add("downlaod-pane");
+
+                item.appendChild(holder);
             }
             break;
 
