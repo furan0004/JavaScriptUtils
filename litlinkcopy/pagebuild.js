@@ -266,7 +266,6 @@ function createItem(info){
                     let tile = document.createElement("div");
                     tile.classList.add("tile-pane-item");
                     tile.style.background = info.items[i].colour;
-                    tile.style.gridArea = dimension.join(" / ");
                     tile.addEventListener("click", function(){
                         console.log(dimension);
                     });
@@ -274,10 +273,12 @@ function createItem(info){
                     if(info.items[i].url != null){
                         let anchor = document.createElement("a");
                         anchor.href = info.items[i].url;
+                        anchor.style.gridArea = dimension.join(" / ");
 
                         anchor.appendChild(tile);
                         tileHolder.appendChild(anchor);
                     }else{
+                        tile.style.gridArea = dimension.join(" / ");
                         tileHolder.appendChild(tile);
                     }
                 }
