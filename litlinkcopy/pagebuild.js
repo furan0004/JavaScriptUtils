@@ -248,7 +248,6 @@ function createItem(info){
             {
                 let rows = 3, columns = 4;
                 let tileMargin = 4;
-                let hMargin = tileMargin * (hDiv + 1) / hDiv, vMargin = tileMargin * (vDiv + 1) / vDiv;
 
                 let tileHolder = document.createElement("div");
                 tileHolder.classList.add("tile-pane");
