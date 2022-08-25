@@ -152,14 +152,14 @@ function createItem(info){
 
         case "dynamic-pane":
             {
+                item.classList.remove("pane");
                 item.classList.add("dynamic-pane");
                 item.style.background = (info.background.substring(0, 1) == "#") ? info.background : `url(${info.background})`;
                 item.style.backgroundSize = "cover";
                 item.style.backgroundPosition = "center";
-                item.style.width = "calc(100% - 24px)";
-                item.style.padding = "0";
 
                 let anchor = document.createElement("a");
+                anchor.classList.add("pane");
                 anchor.href = info.url;
 
                 let cover = document.createElement("div");
@@ -230,6 +230,12 @@ function createItem(info){
                 item.appendChild(titleRow);
                 titleRow.appendChild(title);
                 item.appendChild(description);
+            }
+            break;
+
+        case "tile":
+            {
+                
             }
             break;
     }
