@@ -6,9 +6,25 @@
 }
 
 .download-pane-thunbnail{
+    width: 50%;
+    height: 100%;
 
+    border-radius: 12px;
 }
 
-.download-pane-detail{
-    
+.download-pane-details{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.download-pane-button{
+    padding: 2px 4px;
+
+    background: #FFC0A0;
+    color: #FFFFFF;
+}
+
+.download-pane-button:hover{
+    text-decoration: underline;
 }

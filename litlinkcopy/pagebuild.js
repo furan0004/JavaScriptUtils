@@ -293,12 +293,14 @@ function createItem(info){
                 thumbnail.classList.add("download-pane-thunbnail");
 
                 let detail = document.createElement("div");
+                detail.classList.add("download-pane-details");
 
                 let dlAnchor = document.createElement("a");
                 dlAnchor.href = encodeURI(info.url);
                 dlAnchor.download = info.filename;
 
                 let dlBtn = document.createElement("div");
+                dlBtn.classList.add("download-pane-button");
                 dlBtn.innerText = "Download";
 
                 item.appendChild(holder);
