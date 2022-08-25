@@ -287,10 +287,11 @@ function createItem(info){
         case "download-pane":
             {
                 let holder = document.createElement("div");
-                holder.classList.add("downlaod-pane");
+                holder.classList.add("download-pane");
 
                 let thumbnail = document.createElement("img");
-                thumbnail.classList.add("download-pane-thunbnail");
+                thumbnail.classList.add("download-pane-thumbnail");
+                thumbnail.src = info.thumbnail;
 
                 let detail = document.createElement("div");
                 detail.classList.add("download-pane-details");

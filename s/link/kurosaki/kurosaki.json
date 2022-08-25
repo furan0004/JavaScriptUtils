@@ -174,7 +174,8 @@
         {
             "type": "download-pane",
             "filename": "heyheyhey.txt",
-            "url": "data, heyheyhey!!!!"
+            "url": "data, heyheyhey!!!!",
+            "thumbnail": "/res/images/icon.png"
         }
 
     ]
