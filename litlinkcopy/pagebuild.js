@@ -1,5 +1,5 @@
 
-import itemList from "./styles/master.json" assert {type: "json"};
+import itemList from "./master.json" assert {type: "json"};
 
 //import css
 import itemStyle_0 from "/litlinkcopy/styles/simple_row.css" assert {type: "css"};
