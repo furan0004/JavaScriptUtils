@@ -256,12 +256,30 @@ function createItem(info){
 
 
                 for(let i = 0; i < info.items.length; i++){
+                    let dimension = [
+                        info.items[i].position.y,
+                        info.items[i].position.x,
+                        info.items[i].position.y + info.items[i].size.height,
+                        info.items[i].position.x + info.items[i].size.width
+                    ];
+                    
                     let tile = document.createElement("div");
                     tile.classList.add("tile-pane-item");
                     tile.style.background = info.items[i].colour;
-                    tile.style.gridArea = `${info.items[i].position.y} / ${info.items[i].position.x} / ${info.items[i].position.y + info.items[i].size.height} / ${info.items[i].position.x + info.items[i].size.width}`;
+                    tile.style.gridArea = dimension.join(" / ");
+                    tile.addEventListener("click", function(){
+                        console.log(dimension);
+                    });
 
-                    tileHolder.appendChild(tile);
+                    if(info.items[i].url != null){
+                        let anchor = document.createElement("a");
+                        anchor.href = info.items[i].url;
+
+                        anchor.appendChild(tile);
+                        tileHolder.appendChild(anchor);
+                    }else{
+                        tileHolder.appendChild(tile);
+                    }
                 }
 
                 item.appendChild(tileHolder);
@@ -272,6 +290,8 @@ function createItem(info){
             {
                 let holder = document.createElement("div");
                 holder.classList.add("downlaod-pane");
+
+
 
                 item.appendChild(holder);
             }
