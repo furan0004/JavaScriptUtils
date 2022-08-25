@@ -244,7 +244,7 @@ function createItem(info){
 
         case "tile-pane":
             {
-                let hDiv = 10, vDiv = 24;
+                let hDiv = 4, vDiv = 3;
                 let tileMargin = 4;
                 let hMargin = tileMargin * (hDiv + 1) / hDiv, vMargin = tileMargin * (vDiv + 1) / vDiv;
 
@@ -266,9 +266,9 @@ function createItem(info){
             }
             break;
 
-        case "file-download":
+        case "download-pane":
             {
-
+                
             }
             break;
 
