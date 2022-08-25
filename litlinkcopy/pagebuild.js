@@ -257,8 +257,8 @@ function createItem(info){
 
                 for(let i = 0; i < rows * columns; i++){
                     let pos = {
-                        x: i % columns,
-                        y: Math.floor(i / columns),
+                        x: i % columns + 1,
+                        y: Math.floor(i / columns) + 1,
                     };
 
                     let tile = document.createElement("div");
