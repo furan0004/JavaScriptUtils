@@ -1,5 +1,5 @@
 .dynamic-pane{
-    width: 100%;
+    width: calc(100% - 32px);
     height: auto;
     aspect-ratio: 16 / 9;
     padding: 0;
