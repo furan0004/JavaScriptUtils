@@ -79,7 +79,8 @@
             "type": "tile-pane",
             "template": {
                 "rows": 4,
-                "columns": 4
+                "columns": 4,
+                "gap": 8
             },
             "items": [
                 {

@@ -252,6 +252,7 @@ function createItem(info){
                 tileHolder.classList.add("tile-pane");
                 tileHolder.style.aspectRatio = columns / rows;
                 tileHolder.style.gridTemplate = `${100 / rows}% / ${100 / columns}%`;
+                tileHolder.style.gap = `${info.template.gap}px`;
 
 
                 for(let i = 0; i < info.items.length; i++){
