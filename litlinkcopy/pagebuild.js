@@ -5,10 +5,12 @@ import itemList from "./master.json" assert {type: "json"};
 import itemStyle_0 from "/litlinkcopy/styles/simple_row.css" assert {type: "css"};
 import itemStyle_1 from "/litlinkcopy/styles/dynamic_pane.css" assert {type: "css"};
 import itemStyle_2 from "/litlinkcopy/styles/string_pane.css" assert {type: "css"};
+import itemStyle_3 from "/litlinkcopy/styles/tile-pane.css" assert {type: "css"};
 
 document.adoptedStyleSheets.push(itemStyle_0);
 document.adoptedStyleSheets.push(itemStyle_1);
 document.adoptedStyleSheets.push(itemStyle_2);
+document.adoptedStyleSheets.push(itemStyle_3);
 
 //import main css
 import indexStyle from "/litlinkcopy/styles/index.css" assert {type: "css"};
