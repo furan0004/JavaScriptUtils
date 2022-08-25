@@ -249,7 +249,7 @@ function createItem(info){
                 let rows = info.template.rows, columns = info.template.columns;
 
                 let grid = document.createElement("div");
-                grid.classList.add("tile-pane");
+                grid.classList.add("grid-pane");
                 grid.style.aspectRatio = columns / rows;
                 grid.style.gridTemplate = `${100 / rows}% / ${100 / columns}%`;
                 grid.style.gap = `${info.template.gap}px`;
