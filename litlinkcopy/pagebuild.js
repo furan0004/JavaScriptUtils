@@ -29,12 +29,14 @@ export function buildPage(pagedata){
     document.title = pagedata.title || `${pagedata.name}のプロフィール`;
     document.body.style.background = pagedata.appearance.background;
 
-    let iconLink = document.createElement("link");
-    iconLink.rel = "icon";
-    iconLink.href = pagedata.appearance.icon;
-    document.head.appendChild(iconLink);
+    if(pagedata.appearance.favicon != null){
+        let iconLink = document.createElement("link");
+        iconLink.rel = "icon";
+        iconLink.href = pagedata.appearance.favicon;
+        document.head.appendChild(iconLink);
+    }
 
-    //
+    //define container
     line = document.createElement("div");
     line.id = "line";
 
@@ -240,7 +242,24 @@ function createItem(info){
 
         case "tile-pane":
             {
-                
+                let tileHolder = document.createElement("div");
+                tileHolder.classList.add("tile-pane");
+
+                let hDiv = 3, vDiv = 3;
+                let tileMargin = 4;
+                let hMargin = tileMargin * (hDiv + 1) / hDiv, vMargin = tileMargin * (vDiv + 1) / vDiv;
+
+                for(let i = 0; i < hDiv*vDiv; i++){
+                    let tile = document.createElement("div");
+                    tile.classList.add("tile-pane-item");
+                    tile.style.width = `calc(${100 / hDiv}% - ${hMargin}px)`;
+                    tile.style.height = `calc(${100 / vDiv}% - ${vMargin}px)`;
+                    tile.style.background = ["#800000", "#008000", "#000080", "#808000", "#800080", "#008080"][i % 6];
+                    
+                    tileHolder.appendChild(tile);
+                }
+
+                item.appendChild(tileHolder);
             }
             break;
 
@@ -255,4 +274,8 @@ function createItem(info){
     }
 
     return item;
+}
+
+function showShareDialogue(title, url){
+
 }

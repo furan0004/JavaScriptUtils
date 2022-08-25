@@ -9,6 +9,7 @@
     ],
 
     "appearance": {
+        "favicon": null,
         "icon": "/res/images/icon.png",
         "background": "#FFA0A0"
     },
@@ -75,7 +76,10 @@
         },
 
         {
-
+            "type": "tile-pane",
+            "items": [
+                
+            ]
         }
 
     ]
