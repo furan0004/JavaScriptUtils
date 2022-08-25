@@ -258,7 +258,7 @@ function createItem(info){
                     let tile = document.createElement("div");
                     tile.classList.add("tile-pane-item");
                     tile.style.background = info.items[i].colour;
-                    tile.style.gridArea = `${info.item[i].position.y} / ${info.item[i].position.x} / ${info.item[i].position.y + info.items[i].size.height} / ${info.item[i].position.x + info.items[i].size.width}`;
+                    tile.style.gridArea = `${info.items[i].position.y} / ${info.items[i].position.x} / ${info.items[i].position.y + info.items[i].size.height} / ${info.items[i].position.x + info.items[i].size.width}`;
 
                     tileHolder.appendChild(tile);
                 }
