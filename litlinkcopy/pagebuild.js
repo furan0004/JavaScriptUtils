@@ -244,7 +244,7 @@ function createItem(info){
 
         case "tile-pane":
             {
-                let hDiv = 3, vDiv = 4;
+                let hDiv = 10, vDiv = 24;
                 let tileMargin = 4;
                 let hMargin = tileMargin * (hDiv + 1) / hDiv, vMargin = tileMargin * (vDiv + 1) / vDiv;
 
