@@ -1,7 +1,7 @@
 
 import itemList from "./master.json" assert {type: "json"};
 
-import restrictLength from "/scripts/functions.js";
+import { restrictLength } from "/scripts/functions.js";
 
 //import css
 import itemStyle_0 from "/litlinkcopy/styles/simple_row.css" assert {type: "css"};
