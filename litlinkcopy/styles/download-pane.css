@@ -33,9 +33,15 @@
 .download-pane-filename{
     width: 100%;
     height: auto;
-    margin: auto auto auto 0;
+    margin: auto auto 0 auto;
 
     text-align: center;
+    font-size: large;
+    font-weight: 400;
+}
+
+.download-pane-button-anchor{
+    margin: auto;
 }
 
 .download-pane-button{
@@ -43,7 +49,6 @@
     height: auto;
 
     padding: 2px 8px;
-    margin: auto;
 
     border-radius: 4px;
     background: #FF8000;
@@ -62,4 +67,5 @@
     
     overflow: hidden;
     text-align: left;
+    font-size: small;
 }
