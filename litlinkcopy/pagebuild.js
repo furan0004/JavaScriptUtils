@@ -377,7 +377,7 @@ function showShareDialogue(title = "", url = location.href){
 
     let urlCopy = document.createElement("img");
     urlCopy.classList.add("share-dialogue-url-icon");
-    urlCopy.src = "https://utils/kurosaki.love/res/images/hyperlink.svg";
+    urlCopy.src = "https://utils.kurosaki.love/res/images/hyperlink.svg";
     urlCopy.addEventListener("click", function(){
         copyToClipboard(urlText.innerText);
     });
