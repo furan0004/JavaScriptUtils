@@ -272,7 +272,7 @@
             "type": "download-pane",
             "filename": "heyheyhey.txt",
             "url": "data:chaarset=UTF-8,heyheyhey!!!!",
-            "thumbnail": "/res/images/icon.png",
+            "thumbnail": "https://utils.kurosaki.love/res/images/icon.png",
             "description": null
         }        
     ]
