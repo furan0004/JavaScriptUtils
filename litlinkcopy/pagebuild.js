@@ -32,6 +32,12 @@ var profile = {
 };
 
 export function buildPage(pagedata){
+    navigator.permissions.query({name: "clipboard-write"}).then((result) => {
+        if (result.state === "granted" || result.state === "prompt") {
+            navigator.clipboard.writeText("Kuron Kurosaki");
+        }
+    });
+
     document.title = pagedata.title || `${pagedata.name}のプロフィール`;
     document.body.style.background = pagedata.appearance.background;
 

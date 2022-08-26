@@ -40,3 +40,7 @@ export function createRandomString(map, length){
     
     return result;
 }
+
+export function copyToClipboard(str){
+
+}
