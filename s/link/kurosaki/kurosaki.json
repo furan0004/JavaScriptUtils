@@ -81,7 +81,7 @@
                 "rows": 4,
                 "columns": 4,
                 "gap": 8,
-                "boderRadius": "12px"
+                "borderRadius": "12px"
             },
             "items": [
                 {
@@ -178,7 +178,7 @@
                 "rows": 5,
                 "columns": 5,
                 "gap": 8,
-                "boderRadius": "12px"
+                "borderRadius": "12px"
             },
             "items": [
                 {
@@ -1248,9 +1248,50 @@
                     },
             
                     "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 18,
+                        "y": 12
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 24,
+                        "y": 12
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 2
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 25,
+                        "y": 13
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 3
+                    },
+            
+                    "colour": "#000000"
                 }
             ]
         }
-
     ]
 }
