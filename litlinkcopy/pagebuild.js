@@ -307,6 +307,7 @@ function createItem(info){
                 let dlRow = document.createElement("div");
 
                 let dlAnchor = document.createElement("a");
+                dlAnchor.classList.add("download-pane-button-anchor");
                 dlAnchor.href = encodeURI(info.url);
                 dlAnchor.download = info.filename;
 
