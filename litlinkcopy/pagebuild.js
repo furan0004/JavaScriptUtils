@@ -329,8 +329,8 @@ function createItem(info){
                 holder.appendChild(details);
 
                 details.appendChild(nameRow);
-                details.appendChild(dlRow);
                 details.appendChild(descriptionRow);
+                details.appendChild(dlRow);
 
                 nameRow.appendChild(name);
 
