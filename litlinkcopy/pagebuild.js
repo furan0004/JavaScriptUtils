@@ -382,7 +382,7 @@ function showShareDialogue(title = "", url = location.href){
     });
 
     let qrcodeView = document.createElement("img");
-    qrcodeView.classList("share-dialogue-qrcode");
+    qrcodeView.classList.add("share-dialogue-qrcode");
     qrcodeView.src = `https://chart.googleapis.com/chart?chs=177x177&cht=qr&chl=${encodeURI(url)}&choe=UTF-8`;
 
 
