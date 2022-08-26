@@ -376,10 +376,14 @@ function showShareDialogue(title = "", url = location.href){
     urlText.innerText = url;
 
     let urlCopy = document.createElement("img");
+    urlCopy.classList.add("share-dialogue-url-icon");
     urlCopy.src = "/res/images/hyperlink.svg";
     urlCopy.addEventListener("click", function(){
         copyToClipboard(urlText.innerText);
     });
+
+    let qrcodeContainer = document.createElement("div");
+    qrcodeContainer.classList.add("share-dialogue-qrcode-container");
 
     let qrcodeView = document.createElement("img");
     qrcodeView.classList.add("share-dialogue-qrcode");
@@ -389,10 +393,12 @@ function showShareDialogue(title = "", url = location.href){
     screen.appendChild(container);
     container.appendChild(titleView);
     container.appendChild(urlView);
-    container.appendChild(qrcodeView);
+    container.appendChild(qrcodeContainer);
 
     urlView.appendChild(urlText);
     urlView.appendChild(urlCopy);
+
+    qrcodeContainer.appendChild(qrcodeView);
     
     document.body.insertBefore(screen, document.body.children[0]);
 }

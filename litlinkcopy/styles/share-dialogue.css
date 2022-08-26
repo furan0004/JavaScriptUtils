@@ -27,14 +27,28 @@
 }
 
 .share-dialogue-title{
-
+    font-size: larger;
+    font-weight: 500;
 }
 
 .share-dialogue-url{
 
 }
 
+.share-dialogue-url-icon{
+    width: 24px;
+    height: fit-content;
+    margin: auto;
+}
+
+.share-dialogue-qrcode-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
 .share-dialogue-qrcode{
     width: 80%;
     height: fit-content;
+    margin: auto;
 }
