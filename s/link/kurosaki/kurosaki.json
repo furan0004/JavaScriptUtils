@@ -172,6 +172,86 @@
         },
 
         {
+            "type": "grid-pane",
+            "template": {
+                "rows": 5,
+                "columns": 5,
+                "gap": 8
+            },
+            "items": [
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 1
+                    },
+
+                    "size": {
+                        "width": 2,
+                        "height": 3
+                    },
+
+                    "colour": "#FF8080"
+                },
+
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 3
+                    },
+
+                    "size": {
+                        "width": 3,
+                        "height": 2
+                    },
+
+                    "colour": "#80FF80"
+                },
+
+                {
+                    "position": {
+                        "x": 4,
+                        "y": 3
+                    },
+
+                    "size": {
+                        "width": 2,
+                        "height": 3
+                    },
+
+                    "colour": "#8080FF"
+                },
+
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 4
+                    },
+
+                    "size": {
+                        "width": 3,
+                        "height": 2
+                    },
+
+                    "colour": "#FFFF80"
+                },
+
+                {
+                    "position": {
+                        "x": 3,
+                        "y": 3
+                    },
+
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+
+                    "colour": "#FFFFFF"
+                }
+            ]
+        },
+
+        {
             "type": "download-pane",
             "filename": "heyheyhey.txt",
             "url": "data:chaarset=UTF-8,heyheyhey!!!!",
