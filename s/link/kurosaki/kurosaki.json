@@ -237,6 +237,20 @@
 
                 {
                     "position": {
+                        "x": 2,
+                        "y": 2
+                    },
+
+                    "size": {
+                        "width": 3,
+                        "height": 3
+                    },
+
+                    "colour": "#FFFFFF",
+                },
+
+                {
+                    "position": {
                         "x": 3,
                         "y": 3
                     },
@@ -246,7 +260,7 @@
                         "height": 1
                     },
 
-                    "colour": "#FFFFFF",
+                    "colour": "#808080",
                     "url": "https://google.co.uk"
                 }
             ]
