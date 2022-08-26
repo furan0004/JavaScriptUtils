@@ -58,7 +58,7 @@ export function buildPage(pagedata){
     profile.icon.classList.add("profile-icon");
     profile.icon.src = pagedata.appearance.icon;
     profile.icon.addEventListener("click", function(){
-        showShareDialogue();
+        showShareDialogue(document.title);
     });
 
     profile.name = document.createElement("div");
@@ -360,10 +360,15 @@ function showShareDialogue(title = "", url = location.href){
         event.target.remove();
     });
 
+    let container = document.createElement("div");
+    container.classList.add("share-dialogue");
+
     let titleView = document.createElement("div");
+    titleView.classList.add("share-dialogue-title");
     titleView.innerText = title;
 
     let urlView = document.createElement("div");
+    urlView.classList.add("share-dialogue-url");
 
     let urlText = document.createElement("span");
     urlText.innerText = url;
@@ -378,9 +383,10 @@ function showShareDialogue(title = "", url = location.href){
     qrcodeView.src = `https://chart.googleapis.com/chart?chs=177x177&cht=qr&chl=${encodeURI(url)}&choe=UTF-8`;
 
 
-    screen.appendChild(titleView);
-    screen.appendChild(urlView);
-    screen.appendChild(qrcodeView);
+    screen.appendChild(container);
+    container.appendChild(titleView);
+    container.appendChild(urlView);
+    container.appendChild(qrcodeView);
 
     urlView.appendChild(urlText);
     urlView.appendChild(urlCopy);
