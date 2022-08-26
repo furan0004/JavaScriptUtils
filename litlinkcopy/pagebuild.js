@@ -2,6 +2,7 @@
 import itemList from "./master.json" assert {type: "json"};
 
 import { restrictLength } from "/scripts/functions.js";
+import { copyToClipboard } from "/scripts/functions.js";
 
 //import css
 import itemStyle_0 from "/litlinkcopy/styles/simple_row.css" assert {type: "css"};
@@ -32,11 +33,7 @@ var profile = {
 };
 
 export function buildPage(pagedata){
-    navigator.permissions.query({name: "clipboard-write"}).then((result) => {
-        if (result.state === "granted" || result.state === "prompt") {
-            navigator.clipboard.writeText("Kuron Kurosaki");
-        }
-    });
+    copyToClipboard("https://pages.kurosaki.love");
 
     document.title = pagedata.title || `${pagedata.name}のプロフィール`;
     document.body.style.background = pagedata.appearance.background;

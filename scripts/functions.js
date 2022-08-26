@@ -42,5 +42,16 @@ export function createRandomString(map, length){
 }
 
 export function copyToClipboard(str){
-
+    navigator.permissions.query({name: "clipboard-write"}).then((result) => {
+        if (result.state === "granted" || result.state === "prompt") {
+            navigator.clipboard.writeText(str);
+        }else{
+            navigator.permissions.request({name: "clipboard-write"}).then(result => {
+                console.log(result.state);
+                if (result.state === "granted" || result.state === "prompt"){
+                    copyToClipboard(str);
+                }
+            });
+        }
+    });
 }
