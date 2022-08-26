@@ -13,19 +13,53 @@
 }
 
 .download-pane-details{
-    width: auto;
-    height: auto;
+    width: calc(50% - 16px);
+    height: calc(100% - 16px);
+    padding: 8px;
     margin: auto;
 }
 
+.download-pane-details > div{
+    width: calc(100% - 8px);
+    height: calc(100% / 3 - 8px);
+    display: flex;
+    padding: 4px;
+}
+
+.download-pane-details > *{
+    margin: 4px 0;
+}
+
+.download-pane-filename{
+    width: 100%;
+    height: auto;
+    margin: auto auto auto 0;
+
+    text-align: center;
+}
+
 .download-pane-button{
+    width: fit-content;
+    height: auto;
+
     padding: 2px 8px;
+    margin: auto;
 
     border-radius: 4px;
-    background: #FFC0A0;
+    background: #FF8000;
     color: #FFFFFF;
+    text-align: center;
+    font-weight: 500;
 }
 
 .download-pane-button:hover{
     text-decoration: underline;
+}
+
+.download-pane-description{
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    text-align: left;
 }

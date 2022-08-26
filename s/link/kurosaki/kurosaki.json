@@ -174,8 +174,9 @@
         {
             "type": "download-pane",
             "filename": "heyheyhey.txt",
-            "url": "data, heyheyhey!!!!",
-            "thumbnail": "/res/images/icon.png"
+            "url": "data:chaarset=UTF-8,heyheyhey!!!!",
+            "thumbnail": "/res/images/icon.png",
+            "description": null
         }
 
     ]

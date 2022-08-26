@@ -1,6 +1,8 @@
 
 import itemList from "./master.json" assert {type: "json"};
 
+import restrictLength from "/scripts/function.js";
+
 //import css
 import itemStyle_0 from "/litlinkcopy/styles/simple_row.css" assert {type: "css"};
 import itemStyle_1 from "/litlinkcopy/styles/dynamic_pane.css" assert {type: "css"};
@@ -293,8 +295,16 @@ function createItem(info){
                 thumbnail.classList.add("download-pane-thumbnail");
                 thumbnail.src = info.thumbnail;
 
-                let detail = document.createElement("div");
-                detail.classList.add("download-pane-details");
+                let details = document.createElement("div");
+                details.classList.add("download-pane-details");
+
+                let nameRow = document.createElement("div");
+
+                let name = document.createElement("div");
+                name.classList.add("download-pane-filename");
+                name.innerText = restrictLength(info.filename, 20, "...");
+
+                let dlRow = document.createElement("div");
 
                 let dlAnchor = document.createElement("a");
                 dlAnchor.href = encodeURI(info.url);
@@ -304,11 +314,26 @@ function createItem(info){
                 dlBtn.classList.add("download-pane-button");
                 dlBtn.innerText = "Download";
 
+                let descriptionRow = document.createElement("div");
+
+                let description = document.createElement("span");
+                description.classList.add("download-pane-description");
+                description.innerText = info.description || "No description about this.";
+
                 item.appendChild(holder);
                 holder.appendChild(thumbnail);
-                holder.appendChild(detail);
-                detail.appendChild(dlAnchor);
+                holder.appendChild(details);
+
+                details.appendChild(nameRow);
+                details.appendChild(dlRow);
+                details.appendChild(descriptionRow);
+
+                nameRow.appendChild(name);
+
+                dlRow.appendChild(dlAnchor);
                 dlAnchor.appendChild(dlBtn);
+
+                descriptionRow.appendChild(description);
             }
             break;
 
