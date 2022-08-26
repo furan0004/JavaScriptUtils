@@ -9,7 +9,7 @@
 
 .share-dialogue{
     width: calc(90% - 32px);
-    max-width: 928px;
+    max-width: 608px;
     height: auto;
     
     padding: 16px;
@@ -23,16 +23,17 @@
     width: fit-content;
     height: auto;
 
-    margin: auto;
+    margin: 16px auto;
 }
 
 .share-dialogue-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
     font-weight: 500;
 }
 
 .share-dialogue-url{
-
+    display: flex;
 }
 
 .share-dialogue-url-icon{
