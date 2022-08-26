@@ -842,6 +842,244 @@
                     },
             
                     "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 4,
+                        "y": 11
+                    },
+            
+                    "size": {
+                        "width": 2,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 7,
+                        "y": 11
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 11,
+                        "y": 11
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 15,
+                        "y": 11
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 18,
+                        "y": 11
+                    },
+            
+                    "size": {
+                        "width": 4,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 23,
+                        "y": 11
+                    },
+            
+                    "size": {
+                        "width": 3,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 12
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 2
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 2,
+                        "y": 13
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 2
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 3,
+                        "y": 12
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 15
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 2,
+                        "y": 16
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 17
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 3,
+                        "y": 17
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 4,
+                        "y": 16
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 5,
+                        "y": 13
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 5
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 6,
+                        "y": 12
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+            
+                    "colour": "#000000"
+                },
+            
+                {
+                    "position": {
+                        "x": 6,
+                        "y": 14
+                    },
+            
+                    "size": {
+                        "width": 1,
+                        "height": 4
+                    },
+            
+                    "colour": "#000000"
                 }
             ]
         }
