@@ -268,6 +268,7 @@ function createItem(info){
                     let cell = document.createElement("div");
                     cell.classList.add("grid-pane-cell");
                     cell.style.background = info.items[i].colour;
+                    cell.style.borderRadius = info.template.borderRadius || "0px";
 
                     if(info.items[i].url != null){
                         let anchor = document.createElement("a");

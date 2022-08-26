@@ -80,7 +80,8 @@
             "template": {
                 "rows": 4,
                 "columns": 4,
-                "gap": 8
+                "gap": 8,
+                "boderRadius": "12px"
             },
             "items": [
                 {
@@ -176,7 +177,8 @@
             "template": {
                 "rows": 5,
                 "columns": 5,
-                "gap": 8
+                "gap": 8,
+                "boderRadius": "12px"
             },
             "items": [
                 {
