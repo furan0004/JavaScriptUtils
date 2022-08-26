@@ -299,12 +299,14 @@ function createItem(info){
                 details.classList.add("download-pane-details");
 
                 let nameRow = document.createElement("div");
+                nameRow.classList.add("download-pane-filename-row");
 
                 let name = document.createElement("div");
                 name.classList.add("download-pane-filename");
                 name.innerText = restrictLength(info.filename, 20, "...");
 
                 let dlRow = document.createElement("div");
+                dlRow.classList.add("download-pane-button-row");
 
                 let dlAnchor = document.createElement("a");
                 dlAnchor.classList.add("download-pane-button-anchor");
@@ -316,6 +318,7 @@ function createItem(info){
                 dlBtn.innerText = "Download";
 
                 let descriptionRow = document.createElement("div");
+                descriptionRow.classList.add("download-pane-description-row");
 
                 let description = document.createElement("span");
                 description.classList.add("download-pane-description");
