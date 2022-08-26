@@ -359,7 +359,7 @@ function showShareDialogue(title = "", url = location.href){
     let screen = document.createElement("div");
     screen.classList.add("share-screen");
     screen.addEventListener("click", function(event){
-        event.target.remove();
+        if(event.target == screen) event.target.remove();
     });
 
     let container = document.createElement("div");
