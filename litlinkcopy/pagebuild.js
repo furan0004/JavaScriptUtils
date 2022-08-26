@@ -33,8 +33,6 @@ var profile = {
 };
 
 export function buildPage(pagedata){
-    copyToClipboard("https://pages.kurosaki.love");
-
     document.title = pagedata.title || `${pagedata.name}のプロフィール`;
     document.body.style.background = pagedata.appearance.background;
 
@@ -59,6 +57,9 @@ export function buildPage(pagedata){
     profile.icon = document.createElement("img");
     profile.icon.classList.add("profile-icon");
     profile.icon.src = pagedata.appearance.icon;
+    profile.icon.addEventListener("click", function(){
+        showShareDialogue();
+    });
 
     profile.name = document.createElement("div");
     profile.name.classList.add("profile-name");
@@ -352,6 +353,37 @@ function createItem(info){
     return item;
 }
 
-function showShareDialogue(title, url){
+function showShareDialogue(title = "", url = location.href){
+    let screen = document.createElement("div");
+    screen.classList.add("share-screen");
+    screen.addEventListener("click", function(event){
+        event.target.remove();
+    });
 
+    let titleView = document.createElement("div");
+    titleView.innerText = title;
+
+    let urlView = document.createElement("div");
+
+    let urlText = document.createElement("span");
+    urlText.innerText = url;
+
+    let urlCopy = document.createElement("img");
+    urlCopy.src = "/res/images/hyperlink.svg";
+    urlCopy.addEventListener("click", function(){
+        copyToClipboard(urlText.innerText);
+    });
+
+    let qrcodeView = document.createElement("img");
+    qrcodeView.src = `https://chart.googleapis.com/chart?chs=177x177&cht=qr&chl=${encodeURI(url)}&choe=UTF-8`;
+
+
+    screen.appendChild(titleView);
+    screen.appendChild(urlView);
+    screen.appendChild(qrcodeView);
+
+    urlView.appendChild(urlText);
+    urlView.appendChild(urlCopy);
+    
+    document.body.insertBefore(screen, document.body.children[0]);
 }

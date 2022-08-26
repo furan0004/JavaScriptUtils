@@ -36,7 +36,7 @@ a{
 .profile{
     width: 100%;
     height: auto;
-    margin: 16px auto;
+    margin: 0 auto 16px auto;
 }
 
 .profile-icon-holder{
