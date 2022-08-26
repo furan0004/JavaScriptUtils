@@ -10,12 +10,14 @@ import itemStyle_1 from "/litlinkcopy/styles/dynamic_pane.css" assert {type: "cs
 import itemStyle_2 from "/litlinkcopy/styles/string_pane.css" assert {type: "css"};
 import itemStyle_3 from "/litlinkcopy/styles/grid-pane.css" assert {type: "css"};
 import itemStyle_4 from "/litlinkcopy/styles/download-pane.css" assert {type: "css"};
+import itemStyle_5 from "/litlinkcopy/styles/share-dialogue.css" assert {type: "css"};
 
 document.adoptedStyleSheets.push(itemStyle_0);
 document.adoptedStyleSheets.push(itemStyle_1);
 document.adoptedStyleSheets.push(itemStyle_2);
 document.adoptedStyleSheets.push(itemStyle_3);
 document.adoptedStyleSheets.push(itemStyle_4);
+document.adoptedStyleSheets.push(itemStyle_5);
 
 //import main css
 import indexStyle from "/litlinkcopy/styles/index.css" assert {type: "css"};
