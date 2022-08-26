@@ -278,7 +278,7 @@
 
         {
             "type": "grid-pane",
-            "templates": {
+            "template": {
                 "rows": 25,
                 "columns": 25,
                 "gap": 0
