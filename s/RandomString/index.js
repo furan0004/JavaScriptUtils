@@ -1,6 +1,5 @@
 import { toggleButton } from "/scripts/toggleButton.js";
-import { restrictLength } from "/scripts/functions.js";
-import { createRandomString } from "/scripts/functions.js";
+import { restrictLength, createRandomString } from "/lib/functions/stringOrder.js";
 import characters from "./characters.json" assert {type: "json"};
 
 import indexStyle from "./index.css" assert {type: "css"};

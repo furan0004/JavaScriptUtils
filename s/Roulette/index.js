@@ -1,5 +1,4 @@
-import{colourConverter} from "/scripts/colour.js"
-import { sumByArray } from "/scripts/functions.js";
+import{ colourConverter } from "/lib/functions/colourConverter.js";
 
 import indexStyle from "./index.css" assert {type: "css"};
 document.adoptedStyleSheets.push(indexStyle);

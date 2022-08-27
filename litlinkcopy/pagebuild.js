@@ -1,8 +1,8 @@
 
 import itemList from "./master.json" assert {type: "json"};
 
-import { restrictLength } from "/scripts/functions.js";
-import { copyToClipboard } from "/scripts/functions.js";
+import { restrictLength } from "/lib/functions/stringOrder.js";
+import { copyToClipboard } from "/lib/functions/first.js";
 
 //import css
 import itemStyle_0 from "/litlinkcopy/styles/simple_row.css" assert {type: "css"};
