@@ -18,7 +18,7 @@
         "twitter": "https://twitter.com/kuron_nano"
     },
 
-    "items": [
+    "components": [
         {
             "type": "dynamic-pane",
             "icon": null,

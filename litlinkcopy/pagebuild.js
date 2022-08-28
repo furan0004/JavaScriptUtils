@@ -65,7 +65,6 @@ export function buildPage(pagedata){
 
     profile.name = document.createElement("div");
     profile.name.classList.add("profile-name");
-    profile.name.classList.add("profile-name");
     profile.name.innerText = pagedata.name;
 
     profile.tagShow = document.createElement("div");
@@ -119,7 +118,6 @@ function createItem(info){
     let item = document.createElement("div");
     item.classList.add("pane");
 
-    console.log(info);
     switch(info.type){
         case "simple-row":
             {
