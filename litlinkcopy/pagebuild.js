@@ -250,47 +250,6 @@ function createItem(info){
             }
             break;
 
-        case "grid-pane":
-            {
-                let rows = info.template.rows, columns = info.template.columns;
-
-                let grid = document.createElement("div");
-                grid.classList.add("grid-pane");
-                grid.style.aspectRatio = columns / rows;
-                grid.style.gridTemplate = `${100 / rows}% / ${100 / columns}%`;
-                grid.style.gap = `${info.template.gap}px`;
-
-
-                for(let i = 0; i < info.items.length; i++){
-                    let dimension = [
-                        info.items[i].position.y,
-                        info.items[i].position.x,
-                        info.items[i].position.y + info.items[i].size.height,
-                        info.items[i].position.x + info.items[i].size.width
-                    ];
-                    
-                    let cell = document.createElement("div");
-                    cell.classList.add("grid-pane-cell");
-                    cell.style.background = info.items[i].colour;
-                    cell.style.borderRadius = info.template.borderRadius || "0px";
-
-                    if(info.items[i].url != null){
-                        let anchor = document.createElement("a");
-                        anchor.href = info.items[i].url;
-                        anchor.style.gridArea = dimension.join(" / ");
-
-                        anchor.appendChild(cell);
-                        grid.appendChild(anchor);
-                    }else{
-                        cell.style.gridArea = dimension.join(" / ");
-                        grid.appendChild(cell);
-                    }
-                }
-
-                item.appendChild(grid);
-            }
-            break;
-
         default:
             return document.createElement("div");
     }
