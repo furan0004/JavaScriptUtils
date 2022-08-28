@@ -58,6 +58,8 @@ a:hover{
     display: flex;
 
     padding: 16px 0;
+
+    user-select: none;
 }
 
 /* Icon */
