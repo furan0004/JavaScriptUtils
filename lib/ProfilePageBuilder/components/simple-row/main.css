@@ -1,0 +1,62 @@
+/* Anchor */
+.actWHXcmKHMEMaxVlnugqyRYUhtVtqfF{
+    height: 88px;
+    
+    user-select: none;
+}
+
+/* Body */
+.KohFjdRUaUhLVNUIfVQvyTFDUnWFnWfP{
+    width: 100%;
+    height: 64px;
+
+    display: flex;
+}
+
+/* Icon */
+.vDAKvQFeUxOtJUyyPCADzKlmpufTnGcc{
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1;
+
+    border-radius: 8px;
+}
+
+/* Text */
+.LhBshYcDsTchxvCNliriCCaitrVEWsNP{
+    width: calc(100% - 16px);
+    height: 100%;
+
+    padding: 0 8px;
+}
+
+/* Title container */
+.lnrQSNUmkLAILjnXUpupOvrBEDyZsaMm{
+    height: 50%;
+    display: flex;
+}
+
+/* Title */
+.cUWTDtKIMxYxeHrUBiZilpvtxHVLMAqF{
+    width: auto;
+    height: auto;
+    margin: auto;
+
+    font-weight: bold;
+    font-size: larger;
+}
+
+.cUWTDtKIMxYxeHrUBiZilpvtxHVLMAqF:hover{
+    text-decoration: underline;
+}
+
+/* Description */
+.aBZxsrqazlBPFYBZZPwnwNMAoBPpBuDK{
+    width: auto;
+    height: auto;
+
+    font-size: x-small;
+
+    overflow-wrap: anywhere;
+    overflow-y: hidden;
+}

@@ -229,27 +229,6 @@ function createItem(info){
             }
             break;
 
-        case "string-pane":
-            {
-                let titleRow = document.createElement("div");
-                titleRow.classList.add("string-pane-title-row");
-
-                let title = document.createElement("span");
-                title.classList.add("def-font");
-                title.classList.add("string-pane-title");
-                title.innerText = info.title;
-
-                let description = document.createElement("span");
-                description.classList.add("def-font");
-                description.classList.add("string-pane-description");
-                description.innerText = info.description;
-
-                item.appendChild(titleRow);
-                titleRow.appendChild(title);
-                item.appendChild(description);
-            }
-            break;
-
         default:
             return document.createElement("div");
     }
