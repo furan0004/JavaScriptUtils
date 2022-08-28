@@ -10,11 +10,6 @@ a:hover{
     text-decoration: underline;
 }
 
-*{
-    color: #808080;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 /* Layouts */
 #nsDudpnmmDQWnqtHdRMcVLjcXQCpYqRK{
     min-width: 100%;
@@ -29,6 +24,9 @@ a:hover{
     min-height: 100%;
     margin: auto;
     padding: 0 4px;
+
+    color: #808080;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
