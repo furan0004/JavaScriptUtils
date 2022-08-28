@@ -13,13 +13,13 @@
         "background": "yellow"
     },
     
-    "social": {
+    "socials": {
         "twitter": "https://twitter.com/twitter",
         "youtube": "https://www.youtube.com/channel/channnelid"
     },
 
     
-    "items":[
+    "components":[
         {
             "type": "simple-row",
             "icon": "./icon.png",

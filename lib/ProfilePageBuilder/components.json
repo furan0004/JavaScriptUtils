@@ -1,7 +1,31 @@
 [
     {
-        "name": "",
-        "path": "",
-        "style-path": ""
+        "name": "download-pane",
+        "path": "/lib/ProfilePageBuilder/components/download-pane/main.js",
+        "style-path": "/lib/ProfilePageBuilder/components/download-pane/main.css"
+    },
+
+    {
+        "name": "dynamic-pane",
+        "path": "/lib/ProfilePageBuilder/components/dynamic-pane/main.js",
+        "style-path": "/lib/ProfilePageBuilder/components/dynamic-pane/main.css"
+    },
+
+    {
+        "name": "grid-pane",
+        "path": "/lib/ProfilePageBuilder/components/grid-pane/main.js",
+        "style-path": "/lib/ProfilePageBuilder/components/grid-pane/main.css"
+    },
+
+    {
+        "name": "simple-row",
+        "path": "/lib/ProfilePageBuilder/components/simple-row/main.js",
+        "style-path": "/lib/ProfilePageBuilder/components/simple-row/main.css"
+    },
+
+    {
+        "name": "string-pane",
+        "path": "/lib/ProfilePageBuilder/components/string-pane/main.js",
+        "style-path": "/lib/ProfilePageBuilder/components/string-pane/main.css"
     }
 ]
