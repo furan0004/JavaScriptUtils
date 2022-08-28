@@ -1,16 +1,19 @@
-.string-pane-title-row{
+/* Title row */
+.WSfJlCWXiorWEQJeresFRFLVIJDGLwaf{
     width: 100%;
     height: auto;
     display: flex;
 }
 
-.string-pane-title{
+/* Title */
+.wmwgyZNlgkRcrJQTTYzWZQEpZHtutYFf{
     font-size: larger;
     font-weight: 400;
     text-decoration: underline;
 }
 
-.string-pane-description{
+/* Desription */
+.SLDSnXcxthwsVLkEwYfidTcTvtuheaGL{
     overflow-wrap: anywhere;
     font-size: small;
 }
