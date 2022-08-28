@@ -7,5 +7,5 @@ buildPage(kurosakiData);
 */
 
 import { ProfilePage } from "/lib/ProfilePageBuilder/builder.js";
-var profile = new ProfilePage(kurosakiData);
+var profile = new ProfilePage("./kurosaki.json");
 profile.build();
