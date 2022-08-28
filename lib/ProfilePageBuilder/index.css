@@ -10,7 +10,7 @@ a:hover{
     text-decoration: underline;
 }
 
-.def-font{
+*{
     color: #808080;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
