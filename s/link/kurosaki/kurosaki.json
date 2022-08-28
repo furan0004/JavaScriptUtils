@@ -73,6 +73,74 @@
             "url": "https://www.youtube.com/channel/UCgyLVdYI2SwbLU4epVR_vCw",
             "title": "YouTube 3",
             "description": "さしすせそ"
-        }  
+        },
+
+        {
+            "type": "string-pane",
+            "title": "Title",
+            "description": "Description"
+        },
+
+        {
+            "type": "grid-pane",
+            "template": {
+                "rows": 2,
+                "columns": 2,
+                "gap": 4,
+                "borderRadius": "0px"
+            },
+
+            "items": [
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 1
+                    },
+
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+
+                    "colour": "#FF80A0"
+                },
+
+                {
+                    "position": {
+                        "x": 2,
+                        "y": 1
+                    },
+
+                    "size": {
+                        "width": 1,
+                        "height": 2
+                    },
+
+                    "colour": "#80FFFF"
+                },
+
+                {
+                    "position": {
+                        "x": 1,
+                        "y": 2
+                    },
+
+                    "size": {
+                        "width": 1,
+                        "height": 1
+                    },
+
+                    "colour": "#FFC080"
+                }
+            ]
+        },
+
+        {
+            "type": "download-pane",
+            "filename": "download.txt",
+            "url": "https://utils.kurosaki.love/res/text.txt",
+            "thumbnail": "https://utils.kurosaki.love/res/images/icon.png",
+            "description": "Description of the file to download."
+        }
     ]
 }
