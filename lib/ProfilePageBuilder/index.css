@@ -32,7 +32,7 @@ a:hover{
 }
 
 
-#LYbFTXeyVAuuAjDrvyqQbqMitJAXgqZm > .pane, #LYbFTXeyVAuuAjDrvyqQbqMitJAXgqZm > a > .pane{
+#LYbFTXeyVAuuAjDrvyqQbqMitJAXgqZm > div > .pane, #LYbFTXeyVAuuAjDrvyqQbqMitJAXgqZm > div > a > .pane{
     width: calc(100% - 32px);
     height: auto;
     padding: 12px;
