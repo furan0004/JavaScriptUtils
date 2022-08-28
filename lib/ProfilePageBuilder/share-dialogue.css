@@ -21,26 +21,29 @@
     border-radius: 8px;
 }
 
-/* titleView */
-.olmlLktKMrmUWBbQXxqObVFDEKvuadBD > *{
+.UzMdJqcxzPXWPEkAYvqTMoVNHMdvlFai > *{
     width: fit-content;
     height: auto;
 
     margin: 16px auto;
 }
 
-/* urlView */
-.gdYzhdSBnUITyEXffDqlaKswlyGzPINH{
-    display: flex;
-
+/* titleView */
+.olmlLktKMrmUWBbQXxqObVFDEKvuadBD{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
     font-weight: 500;
 }
 
+/* urlView */
+.gdYzhdSBnUITyEXffDqlaKswlyGzPINH{
+    display: flex;
+}
+
 /* urlText */
 .dkqCGxWOEpcLGnvHoeuUhpepJQPPtdkJ{
     display: flex;
+    margin: auto;
 }
 
 /* urlCopy */

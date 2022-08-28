@@ -291,61 +291,6 @@ function createItem(info){
             }
             break;
 
-        case "download-pane":
-            {
-                let holder = document.createElement("div");
-                holder.classList.add("download-pane");
-
-                let thumbnail = document.createElement("img");
-                thumbnail.classList.add("download-pane-thumbnail");
-                thumbnail.src = info.thumbnail;
-
-                let details = document.createElement("div");
-                details.classList.add("download-pane-details");
-
-                let nameRow = document.createElement("div");
-                nameRow.classList.add("download-pane-filename-row");
-
-                let name = document.createElement("div");
-                name.classList.add("download-pane-filename");
-                name.innerText = restrictLength(info.filename, 20, "...");
-
-                let dlRow = document.createElement("div");
-                dlRow.classList.add("download-pane-button-row");
-
-                let dlAnchor = document.createElement("a");
-                dlAnchor.classList.add("download-pane-button-anchor");
-                dlAnchor.href = encodeURI(info.url);
-                dlAnchor.download = info.filename;
-
-                let dlBtn = document.createElement("div");
-                dlBtn.classList.add("download-pane-button");
-                dlBtn.innerText = "Download";
-
-                let descriptionRow = document.createElement("div");
-                descriptionRow.classList.add("download-pane-description-row");
-
-                let description = document.createElement("span");
-                description.classList.add("download-pane-description");
-                description.innerText = info.description || "No description about this.";
-
-                item.appendChild(holder);
-                holder.appendChild(thumbnail);
-                holder.appendChild(details);
-
-                details.appendChild(nameRow);
-                details.appendChild(descriptionRow);
-                details.appendChild(dlRow);
-
-                nameRow.appendChild(name);
-
-                dlRow.appendChild(dlAnchor);
-                dlAnchor.appendChild(dlBtn);
-
-                descriptionRow.appendChild(description);
-            }
-            break;
-
         default:
             return document.createElement("div");
     }
