@@ -97,12 +97,12 @@
                         "y": 1
                     },
 
-                    "size": {
+                    "dimensions": {
                         "width": 1,
                         "height": 1
                     },
 
-                    "colour": "#FF80A0"
+                    "background": "#FF80A0"
                 },
 
                 {
@@ -111,12 +111,12 @@
                         "y": 1
                     },
 
-                    "size": {
+                    "dimensions": {
                         "width": 1,
                         "height": 2
                     },
 
-                    "colour": "#80FFFF"
+                    "background": "#80FFFF"
                 },
 
                 {
@@ -125,12 +125,12 @@
                         "y": 2
                     },
 
-                    "size": {
+                    "dimensiions": {
                         "width": 1,
                         "height": 1
                     },
 
-                    "colour": "#FFC080"
+                    "background": "#FFC080"
                 }
             ]
         },
@@ -138,7 +138,7 @@
         {
             "type": "download-pane",
             "filename": "download.txt",
-            "url": "https://utils.kurosaki.love/res/text.txt",
+            "url": "https://utils.kurosaki.love/res/test.txt",
             "thumbnail": "https://utils.kurosaki.love/res/images/icon.png",
             "description": "Description of the file to download."
         }
