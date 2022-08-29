@@ -149,6 +149,16 @@
             "url": "https://utils.kurosaki.love/.../test.txt",
             "thumbnail": "https://utils.kurosaki.love/.../thumbnail.png",
             "description": "test.txtをdownload.txtにリネームしてダウンロードするよ。"
+        },
+
+        {
+            "type": "dynamic-pane",
+            "icon": "/res/images/background.jpg",
+            "background": "#FFFFC0",
+            "url": "https://utils.kurosaki.love",
+            "title": "Title",
+            "message": "Message",
+            "description": "Descriptio \nDescription"
         }
     ]
 }

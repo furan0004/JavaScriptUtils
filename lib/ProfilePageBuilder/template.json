@@ -32,7 +32,7 @@
             "type": "dynamic-pane",
             "icon": "./icon.png",
             "background": "./background.png",
-            "url": "https://yourdomain.xyz",
+            "url": "https://utils.kurosaki.love/",
             "title": "Title",
             "message": "Message",
             "description": "Description"
