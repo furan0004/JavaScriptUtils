@@ -141,7 +141,7 @@
             "url": "https://utils.kurosaki.love/res/test.txt",
             "thumbnail": "https://utils.kurosaki.love/res/images/icon.png",
             "description": "Description of the file to download."
-        }
+        },
 
         {
             "type": "download-pane",
