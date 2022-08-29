@@ -4,7 +4,7 @@ body{
 
 a{
     text-decoration: none;
-    
+
     color: #808080;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -19,6 +19,7 @@ a:hover{
     min-height: 100%;
 
     margin: 0;
+    padding: 16px 0;
 }
 
 #LYbFTXeyVAuuAjDrvyqQbqMitJAXgqZm{
