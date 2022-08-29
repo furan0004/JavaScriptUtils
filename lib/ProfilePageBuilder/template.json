@@ -50,7 +50,7 @@
                 "rows": 2,
                 "columns": 2,
                 "gap": 4,
-                "borderRadius": "0px"
+                "border-radius": 0
             },
 
             "items": [

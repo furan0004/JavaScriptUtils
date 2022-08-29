@@ -78,7 +78,7 @@
         {
             "type": "string-pane",
             "title": "Title",
-            "description": "Description"
+            "description": "Description \n\n\n\n\n\n\n\n\n\n Description end."
         },
 
         {
