@@ -23,16 +23,10 @@
             "type": "dynamic-pane",
             "icon": null,
             "background": "/res/images/background.jpg",
-            "url": "https://kurosaki.love",
+            "url": "https://kurosaki.love",  
             "title": "blog",
             "message": "ブログ作ったんだから！",
             "description": "まだ記事は少ないよ。これから増える。"
-        },
-
-        {
-            "type": "string-pane",
-            "title": "litlinkを再現してみた。",
-            "description": "かのサイトを元に、できるだけ見たまま再現した。\n ちょっと面倒な部分は省略したりもしたけど、見た感じほぼ再現できてるでしょ。"
         },
 
         {
@@ -133,32 +127,6 @@
                     "background": "#FFC080"
                 }
             ]
-        },
-
-        {
-            "type": "download-pane",
-            "filename": "download.txt",
-            "url": "https://utils.kurosaki.love/res/test.txt",
-            "thumbnail": "https://utils.kurosaki.love/res/images/icon.png",
-            "description": "Description of the file to download."
-        },
-
-        {
-            "type": "download-pane",
-            "filename": "download.txt",
-            "url": "https://utils.kurosaki.love/.../test.txt",
-            "thumbnail": "https://utils.kurosaki.love/.../thumbnail.png",
-            "description": "test.txtをdownload.txtにリネームしてダウンロードするよ。"
-        },
-
-        {
-            "type": "dynamic-pane",
-            "icon": "/res/images/background.jpg",
-            "background": "#FFFFC0",
-            "url": "https://utils.kurosaki.love",
-            "title": "Title",
-            "message": "Message",
-            "description": "Descriptio \nDescription"
         }
     ]
 }
