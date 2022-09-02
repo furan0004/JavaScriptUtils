@@ -15,8 +15,15 @@ function reloadQRCode(){
 
 (function(){
     textarea.addEventListener("change", reloadQRCode);
+    textarea.addEventListener("keypress", function(event){
+        if(event.keyCode == 13) reloadQRCode();
+    });
+
     qrSize.addEventListener("change", reloadQRCode);
+    ecLevel.addEventListener("change", reloadQRCode);
 
     textarea.value = "";
     qrSize.selectedIndex = 5;
+
+    reloadQRCode();
 })();
