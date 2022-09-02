@@ -3,7 +3,6 @@
         "name": "",
         "path": "",
         "hidden": true,
-        "iconAvailable": false,
         "iconPath": null,
         "description": ""
     },
@@ -12,7 +11,6 @@
         "name": "Index",
         "path": "/",
         "hidden": true,
-        "iconAvailable": false,
         "iconPath": null,
         "description": ""
     },
@@ -21,7 +19,6 @@
         "name": "Click Counter",
         "path": "/s/ClickCounter",
         "hidden": false,
-        "iconAvailable": false,
         "iconPath": null,
         "description": "Measure your click speed."
     },
@@ -30,7 +27,6 @@
         "name": "Product Table",
         "path": "/s/ProductTable",
         "hidden": false,
-        "iconAvailable": false,
         "iconPath": null,
         "description": "九九 tables of other base."
     },
@@ -39,7 +35,6 @@
         "name": "Random String Generator",
         "path": "/s/RandomString",
         "hidden": false,
-        "iconAvailable": false,
         "iconPath": null,
         "description": "Generate random string."
     },
@@ -48,7 +43,6 @@
         "name": "Roulette",
         "path": "/s/Roulette",
         "hidden": true,
-        "iconAvailable": false,
         "iconPath": null,
         "description": "Only roulette."
     },
@@ -57,7 +51,6 @@
         "name": "SI-Prefix Concentration",
         "path": "/s/SI-Prefix-Concentration",
         "hidden": false,
-        "iconAvailable": false,
         "iconPath": null,
         "description": "Concentration game in SI-Prefix."
     },
@@ -66,7 +59,6 @@
         "name": "Text Reorder",
         "path": "/s/Text-Reorder",
         "hidden": false,
-        "iconAvailable": false,
         "iconPath": null,
         "description": "Reorder string. Invert, replace, repeat, and some more."
     },
@@ -75,7 +67,6 @@
         "name": "QR Code Generator",
         "path": "/s/QRCode",
         "hidden": false,
-        "iconAvailable": false,
         "iconPath": null,
         "description": "Generate a QR Code. \n Powered Google Charts API."
     }

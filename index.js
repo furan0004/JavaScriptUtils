@@ -27,9 +27,8 @@ function createListItem(info){
 
     let icon = document.createElement("img");
     icon.classList.add("index-item-icon");
-    if(info.iconAvailable){
+    if(info.iconPath){
         icon.src = info.iconPath || `${info.path}/icon.png`;
-        
     }
 
     let textRows = document.createElement("div");
