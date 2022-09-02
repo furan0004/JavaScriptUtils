@@ -15,6 +15,9 @@ function reloadQRCode(){
 
 (function(){
     let timeout = null;
+    let canceller = function(){
+        if(timeout != null) clearTimeout(timeout);
+    };
     let listener = function(){
         if(timeout == null) timeout = setTimeout(function(){
             let ajax = new XMLHttpRequest();
@@ -40,9 +43,6 @@ function reloadQRCode(){
 
             canceller();
         }, 1000);
-    };
-    let canceller = function(){
-        if(timeout != null) clearTimeout(timeout);
     };
 
     qrcodeDisplay.addEventListener("mousedown", listener);
