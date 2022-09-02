@@ -43,10 +43,7 @@ function reloadQRCode(){
         }, 1000);
     };
 
-    qrcodeDisplay.addEventListener("mousedown", listener);
-    qrcodeDisplay.addEventListener("touchstart", listener);
-    qrcodeDisplay.addEventListener("mouseup", canceller);
-    qrcodeDisplay.addEventListener("touchend", canceller);
+    qrcodeDisplay.addEventListener("dblclick", listener);
 
     textarea.addEventListener("change", reloadQRCode);
     textarea.addEventListener("keypress", function(event){
