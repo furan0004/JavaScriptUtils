@@ -5,16 +5,16 @@
         <div class="line">
             <img id="qrcodeDisplay"></img>
 
-            <textarea placeholder="Data"></textarea>
+            <textarea id="subject" placeholder="Data"></textarea>
             
             <label> QR Code Size </label>
-            <select>
-                <option value="v1"> Version 1 (21x21) </option>
-                <option value="v2"> Version 2 (25x25) </option>
-                <option value="v3"> Version 3 (29x29) </option>
-                <option value="v4"> Version 4 (33x33) </option>
-                <option value="v10"> Version 10 (57x57) </option>
-                <option value="v40"> Version 40 (177x177) </option>
+            <select id="qrSize">
+                <option value="21x21"> Version 1 (21x21) </option>
+                <option value="25x25"> Version 2 (25x25) </option>
+                <option value="29x29"> Version 3 (29x29) </option>
+                <option value="33x33"> Version 4 (33x33) </option>
+                <option value="57x57"> Version 10 (57x57) </option>
+                <option value="177x177"> Version 40 (177x177) </option>
             </select>
             
             
