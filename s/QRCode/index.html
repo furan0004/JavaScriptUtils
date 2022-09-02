@@ -7,7 +7,7 @@
 
             <textarea id="subject" placeholder="Data"></textarea>
             
-            <label> QR Code Size </label>
+            <label for="qrSize"> QR Code Size </label>
             <select id="qrSize">
                 <option value="21x21"> Version 1 (21x21) </option>
                 <option value="25x25"> Version 2 (25x25) </option>
@@ -17,7 +17,13 @@
                 <option value="177x177"> Version 40 (177x177) </option>
             </select>
             
-            
+            <label for="ecLevel"> QR Code EC Level </label>
+            <select id="ecLevel">
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="Q">Q</option>
+                <option value="H">H</option>
+            </select>            
         </div>
     </body>
 
