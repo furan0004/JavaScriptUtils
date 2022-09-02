@@ -40,7 +40,7 @@ function reloadQRCode(){
 
     textarea.addEventListener("change", reloadQRCode);
     textarea.addEventListener("keypress", function(event){
-        if(event.keyCode == 13){
+        if(!event.shiftKey && event.keyCode == 13){
             reloadQRCode();
             event.preventDefault();
         }
