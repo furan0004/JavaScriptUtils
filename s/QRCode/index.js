@@ -15,32 +15,25 @@ function reloadQRCode(){
 
 (function(){
     let timeout = null;
-    let canceller = function(){
-        if(timeout != null) clearTimeout(timeout);
-    };
     let listener = function(){
-        if(timeout == null) timeout = setTimeout(function(){
-            let ajax = new XMLHttpRequest();
-            ajax.open("GET", qrcodeDisplay.src, true);
-            ajax.responseType = "arraybuffer";
-            ajax.onload = function(event){
-                const arrayBuffer = ajax.response;
-                if(arrayBuffer){
-                    let date = new Date();
+        let ajax = new XMLHttpRequest();
+        ajax.open("GET", qrcodeDisplay.src, true);
+        ajax.responseType = "arraybuffer";
+        ajax.onload = function(event){
+            const arrayBuffer = ajax.response;
+            if(arrayBuffer){
+                let date = new Date();
 
-                    let anchor = document.createElement("a");
-                    anchor.download = `qrcode_${date.getSeconds()}${date.getMinutes()}${date.getHours()}${date.getDate()}${date.getMonth()}${date.getFullYear()}.png`;
+                let anchor = document.createElement("a");
+                anchor.download = `qrcode_${date.getSeconds()}${date.getMinutes()}${date.getHours()}${date.getDate()}${date.getMonth()}${date.getFullYear()}.png`;
 
-                    const byteArray = new Uint8Array(arrayBuffer);
+                const byteArray = new Uint8Array(arrayBuffer);
 
-                    anchor.href = URL.createObjectURL(new Blob([byteArray], {type: "image/png"}));
-                    anchor.click();
-                }
-            };
-            ajax.send();
-
-            canceller();
-        }, 1000);
+                anchor.href = URL.createObjectURL(new Blob([byteArray], {type: "image/png"}));
+                anchor.click();
+            }
+        };
+        ajax.send();
     };
 
     qrcodeDisplay.addEventListener("dblclick", listener);
