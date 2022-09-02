@@ -30,8 +30,10 @@ function reloadQRCode(){
 
                     const byteArray = new Uint8Array(arrayBuffer);
 
-                    anchor.src = URL.createObjectURL(new Blob([byteArray], {type: "img/png"}));
+                    anchor.href = URL.createObjectURL(new Blob([byteArray], {type: "image/png"}));
                     anchor.click();
+
+                    console.log(123);
                 }
             };
             ajax.send();
