@@ -1,4 +1,4 @@
-import { convertToNthDecimal } from "/lib/functions/calcuratiion.js"
+import { convertToNthDecimal } from "/lib/functions/calcuration.js"
 
 import indexStyle from "./index.css" assert {type: "css"};
 document.adoptedStyleSheets.push(indexStyle);
