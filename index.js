@@ -35,7 +35,7 @@ function createListItem(info){
     let textRows = document.createElement("div");
     textRows.classList.add("index-item-text-rows");
 
-    let titleRow = document("div");
+    let titleRow = document.createElement("div");
     titleRow.classList.add("index-item-title-row");
 
     let title = document.createElement("span");
