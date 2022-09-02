@@ -35,8 +35,6 @@ function reloadQRCode(){
 
                     anchor.href = URL.createObjectURL(new Blob([byteArray], {type: "image/png"}));
                     anchor.click();
-
-                    console.log(123);
                 }
             };
             ajax.send();
