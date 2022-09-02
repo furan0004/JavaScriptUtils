@@ -18,8 +18,13 @@ function reloadQRCode(){
     let listener = function(){
         if(timeout == null) timeout = setTimeout(function(){
             let anchor = document.createElement("a");
-            anchor.href = qrcodeDisplay.src;
             anchor.download = `qrcode_${(new Date()).toDateString()}.png`;
+
+            let ajax = new XMLHttpRequest();
+            ajax.open("GET", qrcodeDisplay.src);
+            ajax.send();
+
+            console.log(ajax.responseText);
 
             anchor.click();
 
