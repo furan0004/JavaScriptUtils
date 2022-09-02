@@ -23,6 +23,7 @@ function reloadQRCode(){
 
             anchor.click();
 
+            canceller();
         }, 1000);
     };
     let canceller = function(){
