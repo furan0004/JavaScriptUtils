@@ -69,5 +69,14 @@
         "iconAvailable": false,
         "iconPath": null,
         "description": "Reorder string. Invert, replace, repeat, and some more."
+    },
+
+    {
+        "name": "QR Code Generator",
+        "path": "/s/QRCode",
+        "hidden": true,
+        "iconAvailable": false,
+        "iconPath": null,
+        "description": "Generate a QR Code. \n Powered Google Charts API."
     }
 ]

@@ -14,6 +14,26 @@ function reloadQRCode(){
 }
 
 (function(){
+    let timeout = null;
+    let listener = function(){
+        if(timeout == null) timeout = setTimeout(function(){
+            let anchor = document.createElement("a");
+            anchor.href = qrcodeDisplay.src;
+            anchor.download = `qrcode_${(new Date()).toDateString()}.png`;
+
+            anchor.click();
+
+        }, 1000);
+    };
+    let canceller = function(){
+        if(timeout != null) clearTimeout(timeout);
+    };
+
+    qrcodeDisplay.addEventListener("mousedown", listener);
+    qrcodeDisplay.addEventListener("touchstart", listener);
+    qrcodeDisplay.addEventListener("mouseup", canceller);
+    qrcodeDisplay.addEventListener("touchend", canceller);
+
     textarea.addEventListener("change", reloadQRCode);
     textarea.addEventListener("keypress", function(event){
         if(event.keyCode == 13){
