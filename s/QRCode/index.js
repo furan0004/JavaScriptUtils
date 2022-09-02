@@ -21,12 +21,18 @@ function reloadQRCode(){
             anchor.download = `qrcode_${(new Date()).toDateString()}.png`;
 
             let ajax = new XMLHttpRequest();
-            ajax.open("GET", qrcodeDisplay.src);
+            ajax.open("GET", qrcodeDisplay.src, true);
+            ajax.responseType = "arraybuffer";
+            ajax.onload = function(event){
+                const arrayBuffer = ajax.response;
+                if(arrayBuffer){
+                    const byteArray = new Uint8Array(arrayBuffer);
+
+                    anchor.src = `data:image/png;base64,${encodeURIComponent(String.fromCharCode.apply(null, byteArray).toBase64())}`;
+                    anchor.click();
+                }
+            };
             ajax.send();
-
-            console.log(ajax.responseText);
-
-            anchor.click();
 
             canceller();
         }, 1000);
