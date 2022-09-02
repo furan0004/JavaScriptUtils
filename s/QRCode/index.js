@@ -6,12 +6,15 @@ var qrcodeDisplay = document.getElementById("qrcodeDisplay");
 var textarea = document.getElementById("subject");
 var qrSize = document.getElementById("qrSize");
 
-(function(){
-    textarea.addEventListener("change", function(){
-        let text = textarea.value;
+function reloadQRCode(){
+    let text = textarea.value;
 
         qrcodeDisplay.src = `https://chart.googleapis.com/chart?cht=qr&chs=${qrSize.value}&chl=${encodeURI(text)}`;
-    });
+}
+
+(function(){
+    textarea.addEventListener("change", reloadQRCode);
+    qrSize.addEventListener("change", reloadQRCode);
 
     textarea.value = "";
 })();
