@@ -74,7 +74,7 @@
     {
         "name": "QR Code Generator",
         "path": "/s/QRCode",
-        "hidden": true,
+        "hidden": false,
         "iconAvailable": false,
         "iconPath": null,
         "description": "Generate a QR Code. \n Powered Google Charts API."
