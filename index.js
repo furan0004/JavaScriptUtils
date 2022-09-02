@@ -35,9 +35,8 @@ function createListItem(info){
     let textRows = document.createElement("div");
     textRows.classList.add("index-item-text-rows");
 
-    let textRow = [document.createElement("div"), document.createElement("div")];
-    textRow[0].classList.add("index-item-text-row");
-    textRow[1].classList.add("index-item-text-row");
+    let titleRow = document("div");
+    titleRow.classList.add("index-item-title-row");
 
     let title = document.createElement("span");
     title.classList.add("index-item-title");
@@ -51,11 +50,10 @@ function createListItem(info){
     row.appendChild(body);
     body.appendChild(icon);
     body.appendChild(textRows);
-    textRows.appendChild(textRow[0]);
-    textRows.appendChild(textRow[1]);
+    textRows.appendChild(titleRow);
+    textRows.appendChild(description);
 
-    textRow[0].appendChild(title);
-    textRow[1].appendChild(description);
+    titleRow.appendChild(title);
 
     return anchor;
 }
