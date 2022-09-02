@@ -17,6 +17,11 @@
     margin: 2px auto;
 
     background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.index-item-row:hover{
+    background: #C0C0C0;
 }
 
 .index-item-body{
