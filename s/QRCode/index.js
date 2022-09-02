@@ -28,7 +28,7 @@ function reloadQRCode(){
                 if(arrayBuffer){
                     const byteArray = new Uint8Array(arrayBuffer);
 
-                    anchor.src = `data:image/png;base64,${encodeURIComponent(String.fromCharCode.apply(null, byteArray).toBase64())}`;
+                    anchor.src = URL.createObjectURL(new Blob([byteArray], {type: "img/png"}));
                     anchor.click();
                 }
             };
