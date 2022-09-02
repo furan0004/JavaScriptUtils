@@ -17,15 +17,17 @@ function reloadQRCode(){
     let timeout = null;
     let listener = function(){
         if(timeout == null) timeout = setTimeout(function(){
-            let anchor = document.createElement("a");
-            anchor.download = `qrcode_${(new Date()).toDateString()}.png`;
-
             let ajax = new XMLHttpRequest();
             ajax.open("GET", qrcodeDisplay.src, true);
             ajax.responseType = "arraybuffer";
             ajax.onload = function(event){
                 const arrayBuffer = ajax.response;
                 if(arrayBuffer){
+                    let date = new Date();
+
+                    let anchor = document.createElement("a");
+                    anchor.download = `qrcode_${date.getSeconds()}${date.getMinutes()}${date.getHours()}${date.getDate()}${date.getMonth()}${date.getFullYear()}.png`;
+
                     const byteArray = new Uint8Array(arrayBuffer);
 
                     anchor.src = URL.createObjectURL(new Blob([byteArray], {type: "img/png"}));
