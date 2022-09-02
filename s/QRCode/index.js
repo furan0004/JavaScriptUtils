@@ -9,7 +9,7 @@ var qrSize = document.getElementById("qrSize");
 function reloadQRCode(){
     let text = textarea.value;
 
-        qrcodeDisplay.src = `https://chart.googleapis.com/chart?cht=qr&chs=${qrSize.value}&chl=${encodeURI(text)}`;
+    qrcodeDisplay.src = `https://chart.googleapis.com/chart?cht=qr&chs=${qrSize.value}&chl=${encodeURI(text)}`;
 }
 
 (function(){
