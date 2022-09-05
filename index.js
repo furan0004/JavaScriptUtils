@@ -7,7 +7,7 @@ import { importJSON, importStyles } from "./lib/functions/first.js";
 })();
 
 async function applyPageList(){
-    let pageList = await importJSON("/data/pags.json");
+    let pageList = await importJSON("/data/pages.json");
     let line = document.getElementsByClassName("line")[0];
 
     for(let i = 0; i < pageList.length; i++) if(!pageList[i].hidden){
