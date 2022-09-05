@@ -1,12 +1,9 @@
 import pageList from "./data/pages.json" assert {type: "json"};
-
-import indexStyle from "./index.css" assert {type: "css"};
-document.adoptedStyleSheets.push(indexStyle);
-
-import indexListItemStyle from "./styles/indexListItem.css" assert {type: "css"};
-document.adoptedStyleSheets.push(indexListItemStyle);
+import { importStyles } from "./lib/functions/first";
 
 (function(){
+    importStyles("./index.css", "./styles/indexListItem.css");
+
     let line = document.getElementsByClassName("line")[0];
     for(let i = 0; i < pageList.length; i++) if(!pageList[i].hidden){
         let item = createListItem(pageList[i]);
