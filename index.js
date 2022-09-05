@@ -12,36 +12,36 @@ import { importStyles } from "./lib/functions/first.js";
 })();
 
 function createListItem(info){
+    /* initialise */
     let anchor = document.createElement("a");
-    anchor.classList.add("index-item-anchor");
-    anchor.href = info.path;
-
     let row = document.createElement("div");
-    row.classList.add("index-item-row");
-
     let body = document.createElement("div");
-    body.classList.add("index-item-body");
-
     let icon = document.createElement("img");
+    let textRows = document.createElement("div");
+    let titleRow = document.createElement("div");
+    let title = document.createElement("span");
+    let description = document.createElement("span");
+
+    /* set classes */
+    anchor.classList.add("index-item-anchor");
+    row.classList.add("index-item-row");
+    body.classList.add("index-item-body");
     icon.classList.add("index-item-icon");
+    textRows.classList.add("index-item-text-rows");
+    titleRow.classList.add("index-item-title-row");
+    title.classList.add("index-item-title");
+    description.classList.add("index-item-text");
+
+    /* other properties */
+    anchor.href = info.path;
+    title.innerText = info.name;
+    description.innerText = info.description;
+    
     if(info.iconPath){
         icon.src = info.iconPath;
     }
 
-    let textRows = document.createElement("div");
-    textRows.classList.add("index-item-text-rows");
-
-    let titleRow = document.createElement("div");
-    titleRow.classList.add("index-item-title-row");
-
-    let title = document.createElement("span");
-    title.classList.add("index-item-title");
-    title.innerText = info.name;
-
-    let description = document.createElement("span");
-    description.classList.add("index-item-text");
-    description.innerText = info.description;
-    
+    /* append */
     anchor.appendChild(row);
     row.appendChild(body);
     body.appendChild(icon);
