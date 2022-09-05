@@ -1,5 +1,5 @@
 import pageList from "./data/pages.json" assert {type: "json"};
-import { importStyles } from "./lib/functions/first";
+import { importStyles } from "./lib/functions/first.js";
 
 (function(){
     importStyles("./index.css", "./styles/indexListItem.css");
