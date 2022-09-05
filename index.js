@@ -2,14 +2,19 @@ import { importJSON, importStyles } from "./lib/functions/first.js";
 
 (function(){
     importStyles(["/index.css", "/styles/indexListItem.css"]).then(function(){
-        let pageList = await importJSON("/data/pags.json");
-        let line = document.getElementsByClassName("line")[0];
-        for(let i = 0; i < pageList.length; i++) if(!pageList[i].hidden){
-            let item = createListItem(pageList[i]);
-            line.appendChild(item);
-        }
+        applyPageList();
     }).catch(err => console.log(err));
 })();
+
+async function applyPageList(){
+    let pageList = await importJSON("/data/pags.json");
+    let line = document.getElementsByClassName("line")[0];
+
+    for(let i = 0; i < pageList.length; i++) if(!pageList[i].hidden){
+        let item = createListItem(pageList[i]);
+        line.appendChild(item);
+    }
+}
 
 function createListItem(info){
     /* initialise */
